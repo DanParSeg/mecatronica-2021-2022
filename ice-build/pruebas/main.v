@@ -4,153 +4,138 @@
 
 //---- Top entity
 module main #(
- parameter v4d604b = 3,
- parameter v43db9e = 15,
  parameter v27a8d5 = "v27a8d5.list",
- parameter v55e5ec = 132,
- parameter vdc9752 = 0
+ parameter v169d65 = 20
 ) (
  input v4a48f8,
- input vclk,
+ input vb61f9c,
+ input vd71040,
  output [7:0] vc9977b
 );
- localparam p0 = v43db9e;
- localparam p1 = v4d604b;
- localparam p9 = v27a8d5;
- localparam p13 = v55e5ec;
- localparam p14 = vdc9752;
- wire w2;
- wire w3;
- wire [0:7] w4;
- wire [0:1] w5;
- wire w6;
+ localparam p6 = v27a8d5;
+ localparam p10 = v169d65;
+ wire w0;
+ wire w1;
+ wire [0:7] w2;
+ wire [0:1] w3;
+ wire w4;
+ wire w5;
  wire w7;
- wire [0:7] w8;
- wire w10;
+ wire w8;
+ wire w9;
  wire w11;
- wire w12;
- wire [0:7] w15;
+ wire [0:7] w12;
+ wire [0:31] w13;
+ wire [0:31] w14;
+ wire [0:31] w15;
  wire [0:7] w16;
  wire [0:7] w17;
  wire [0:7] w18;
- wire [0:7] w19;
+ wire w19;
  wire [0:7] w20;
  wire [0:7] w21;
  wire [0:7] w22;
  wire [0:7] w23;
  wire [0:7] w24;
- wire [0:7] w25;
- wire [0:7] w26;
- wire [0:7] w27;
+ wire w25;
+ wire w26;
+ wire w27;
  wire w28;
  wire w29;
  wire w30;
- wire w31;
- wire w32;
- assign w10 = v4a48f8;
- assign vc9977b = w27;
- assign w28 = vclk;
- assign w29 = vclk;
- assign w21 = w8;
- assign w27 = w16;
+ assign w8 = v4a48f8;
+ assign w9 = vb61f9c;
+ assign vc9977b = w24;
+ assign w25 = vd71040;
+ assign w26 = vd71040;
+ assign w27 = vd71040;
+ assign w14 = w13;
+ assign w22 = w17;
+ assign w23 = w16;
+ assign w26 = w25;
+ assign w27 = w25;
+ assign w27 = w26;
  assign w29 = w28;
- assign w31 = w30;
- assign w32 = w30;
- assign w32 = w31;
- v5ad97e #(
-  .vc5c8ea(p0)
- ) v093dff (
- 
- );
- v5ad97e #(
-  .vc5c8ea(p1)
- ) v17dbc5 (
- 
- );
+ assign w30 = w28;
+ assign w30 = w29;
  v05e8eb v45c5c8 (
-  .v23dc54(w6),
-  .va136b0(w7),
-  .v922e3d(w32)
+  .v23dc54(w4),
+  .va136b0(w5),
+  .vba32a6(w20),
+  .v157610(w21),
+  .vcc2c4f(w23),
+  .v922e3d(w28)
  );
  v05e8eb #(
-  .v5a4ee6(p9)
+  .v5a4ee6(p6)
  ) vcf223b (
-  .v23dc54(w2),
-  .va136b0(w3),
-  .vcc2c4f(w4),
-  .v157610(w8),
-  .vba32a6(w24),
-  .v922e3d(w31)
+  .v23dc54(w0),
+  .va136b0(w1),
+  .vcc2c4f(w2),
+  .v157610(w12),
+  .vba32a6(w18),
+  .v922e3d(w30)
  );
  v21cfcc v2579ea (
-  .v9fb85f(w2)
+  .v9fb85f(w0)
  );
  v725b7e v5d9e3c (
-  .v9fb85f(w3)
+  .v9fb85f(w1)
  );
  v3bf99b vb80b32 (
-  .vb096dc(w4)
+  .vb096dc(w2)
  );
  v7404e6 v0ef5e7 (
-  .vd7d1f4(w5)
+  .vd7d1f4(w3),
+  .v595263(w22)
  );
  vfc9dac v3c0180 (
-  .v8b19dd(w5),
-  .v3f8943(w6),
-  .v64d863(w7)
- );
- vd553c7 vd65c2d (
-  .vfeda54(w8),
-  .v78b22f(w12),
-  .v66a578(w16),
-  .va4d6fb(w17),
-  .vba6d41(w18),
-  .v78372c(w19),
-  .v95e7d9(w20),
-  .vbab6c8(w22),
-  .vccf36f(w23),
-  .vbfdb97(w25),
-  .vc2ef4f(w26)
+  .v8b19dd(w3),
+  .v3f8943(w4),
+  .v64d863(w5)
  );
  vcfd9ba vbc7573 (
-  .v6a82dd(w10),
-  .vd4e5d7(w11),
-  .v444878(w28)
+  .vd4e5d7(w7),
+  .v6a82dd(w8),
+  .v444878(w25)
  );
  v1b3913 v33f77a (
-  .ve78ab8(w11),
-  .ved8395(w29),
-  .v3487af(w30)
+  .ve78ab8(w7),
+  .v3487af(w11),
+  .ved8395(w26)
  );
- v35f267 v0d6f16 (
-  .vcbab45(w12),
-  .v0e28cb(w30)
+ v6f058b v0591fa (
+  .v2ebc76(w13),
+  .vd65308(w24)
  );
- v5ad97e #(
-  .vc5c8ea(p13)
- ) ve0f922 (
-  .v26dbdb(w15)
+ v5cc6ec v4a3762 (
+  .v50d6c6(w9),
+  .v381ebf(w11),
+  .vb186da(w19),
+  .vc93bbe(w28)
  );
- v5ad97e #(
-  .vc5c8ea(p14)
- ) v6bdada (
- 
+ v0e64bc #(
+  .v207e0d(p10)
+ ) v8e1000 (
+  .v8337bc(w19),
+  .v531e20(w27)
  );
- v0bd3c1 v7ff1f3 (
-  .vfc5572(w15)
+ vf9ed0d vdd4e2b (
+  .v84ec18(w12),
+  .v961ee9(w13),
+  .vd115bb(w15),
+  .vbfdb97(w16),
+  .vc2ef4f(w17),
+  .v78b22f(w29)
  );
- v0bd3c1 vb50c19 (
-  .vc75b49(w16),
-  .ve0ce24(w17),
-  .v3610ac(w18),
-  .v55960f(w19),
-  .v72c72a(w20),
-  .v49e9c8(w21),
-  .v8a86c8(w22),
-  .v604fda(w23),
-  .vfc5572(w24),
-  .ve6d7e4(w25),
-  .vfd9d0f(w26)
+ ve0c76e vaaffe8 (
+  .v234fbd(w14),
+  .v1bfd13(w15),
+  .ve6d7e4(w16),
+  .vfd9d0f(w17),
+  .vfc5572(w18),
+  .v21ec4d(w20),
+  .v7c37d9(w21)
  );
 endmodule
 
@@ -159,35 +144,6 @@ endmodule
 /*-- - - - - - - - - - - - - - - - - - - - - - - --*/
 /*-- 
 /*-------------------------------------------------*/
-//---- Top entity
-module v5ad97e #(
- parameter vc5c8ea = 0
-) (
- output [7:0] v26dbdb
-);
- localparam p0 = vc5c8ea;
- wire [0:7] w1;
- assign v26dbdb = w1;
- v5ad97e_v465065 #(
-  .VALUE(p0)
- ) v465065 (
-  .k(w1)
- );
-endmodule
-
-/*-------------------------------------------------*/
-/*-- Constante-8bits  */
-/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
-/*-- Valor genérico constante, de 8 bits. Su valor se introduce como parámetro. Por defecto vale 0
-/*-------------------------------------------------*/
-
-module v5ad97e_v465065 #(
- parameter VALUE = 0
-) (
- output [7:0] k
-);
- assign k = VALUE;
-endmodule
 //---- Top entity
 module v05e8eb #(
  parameter v5a4ee6 = "v5a4ee6.list"
@@ -351,6 +307,35 @@ endmodule
 /*-- Valor constante 0 para bus de 8 bits
 /*-------------------------------------------------*/
 //---- Top entity
+module v5ad97e #(
+ parameter vc5c8ea = 0
+) (
+ output [7:0] v26dbdb
+);
+ localparam p0 = vc5c8ea;
+ wire [0:7] w1;
+ assign v26dbdb = w1;
+ v5ad97e_v465065 #(
+  .VALUE(p0)
+ ) v465065 (
+  .k(w1)
+ );
+endmodule
+
+/*-------------------------------------------------*/
+/*-- Constante-8bits  */
+/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
+/*-- Valor genérico constante, de 8 bits. Su valor se introduce como parámetro. Por defecto vale 0
+/*-------------------------------------------------*/
+
+module v5ad97e_v465065 #(
+ parameter VALUE = 0
+) (
+ output [7:0] k
+);
+ assign k = VALUE;
+endmodule
+//---- Top entity
 module v7404e6 (
  input [7:0] v595263,
  output [1:0] vd7d1f4,
@@ -417,60 +402,438 @@ module vfc9dac_v9a2a06 (
  assign o0 = i[0];
 endmodule
 //---- Top entity
-module vd553c7 (
- input [7:0] vbfdb97,
- input [7:0] vc2ef4f,
- input v78b22f,
- output [7:0] v66a578,
- output [7:0] va4d6fb,
- output [7:0] vba6d41,
- output [7:0] v78372c,
- output [7:0] v95e7d9,
- output [7:0] vfeda54,
- output [7:0] vbab6c8,
- output [7:0] vccf36f
+module vcfd9ba (
+ input v444878,
+ input v6a82dd,
+ output vd4e5d7
 );
- wire [0:7] w0;
+ wire w0;
+ wire w1;
+ wire w2;
+ assign vd4e5d7 = w0;
+ assign w1 = v444878;
+ assign w2 = v6a82dd;
+ vcfd9ba_va7041c va7041c (
+  .out(w0),
+  .clk(w1),
+  .in(w2)
+ );
+endmodule
+
+/*-------------------------------------------------*/
+/*-- Debouncer  */
+/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
+/*-- Remove the rebound on a mechanical switch
+/*-------------------------------------------------*/
+
+module vcfd9ba_va7041c (
+ input clk,
+ input in,
+ output out
+);
+ //-- Debouncer Circuit
+ //-- It produces a stable output when the
+ //-- input signal is bouncing
+ 
+ reg btn_prev = 0;
+ reg btn_out_r = 0;
+ 
+ reg [16:0] counter = 0;
+ 
+ 
+ always @(posedge clk) begin
+ 
+   //-- If btn_prev and btn_in are differents
+   if (btn_prev ^ in == 1'b1) begin
+     
+       //-- Reset the counter
+       counter <= 0;
+       
+       //-- Capture the button status
+       btn_prev <= in;
+   end
+     
+   //-- If no timeout, increase the counter
+   else if (counter[16] == 1'b0)
+       counter <= counter + 1;
+       
+   else
+     //-- Set the output to the stable value
+     btn_out_r <= btn_prev;
+ 
+ end
+ 
+ assign out = btn_out_r;
+ 
+endmodule
+//---- Top entity
+module v1b3913 (
+ input ved8395,
+ input ve78ab8,
+ output v3487af
+);
+ wire w0;
+ wire w1;
+ wire w2;
+ wire w3;
+ wire w4;
+ wire w5;
+ assign w0 = ve78ab8;
+ assign w1 = ved8395;
+ assign w4 = ve78ab8;
+ assign v3487af = w5;
+ assign w4 = w0;
+ v1c7dae vbf8366 (
+  .vf54559(w0),
+  .va4102a(w1),
+  .ve8318d(w2)
+ );
+ v35f267 v5053a8 (
+  .v0e28cb(w2),
+  .vcbab45(w3)
+ );
+ vb2090f v758f4d (
+  .v0e28cb(w3),
+  .v3ca442(w4),
+  .vcbab45(w5)
+ );
+endmodule
+
+/*-------------------------------------------------*/
+/*-- Subida  */
+/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
+/*-- Detector de flanco de subida. Emite un tic cuando detecta un flanco de subida. Versión bloques
+/*-------------------------------------------------*/
+//---- Top entity
+module v1c7dae #(
+ parameter v71e305 = 0
+) (
+ input va4102a,
+ input vf54559,
+ output ve8318d
+);
+ localparam p2 = v71e305;
+ wire w0;
+ wire w1;
+ wire w3;
+ assign w0 = va4102a;
+ assign ve8318d = w1;
+ assign w3 = vf54559;
+ v1c7dae_vb8adf8 #(
+  .INI(p2)
+ ) vb8adf8 (
+  .clk(w0),
+  .q(w1),
+  .d(w3)
+ );
+endmodule
+
+/*-------------------------------------------------*/
+/*-- Biestable-D  */
+/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
+/*-- Biestable de datos (Tipo D). Cuando se recibe un tic por load se captura el dato
+/*-------------------------------------------------*/
+
+module v1c7dae_vb8adf8 #(
+ parameter INI = 0
+) (
+ input clk,
+ input d,
+ output q
+);
+ reg q = INI;
+ always @(posedge clk)
+   q <= d;
+endmodule
+//---- Top entity
+module v35f267 (
+ input v0e28cb,
+ output vcbab45
+);
+ wire w0;
+ wire w1;
+ assign w0 = v0e28cb;
+ assign vcbab45 = w1;
+ v35f267_vd54ca1 vd54ca1 (
+  .a(w0),
+  .c(w1)
+ );
+endmodule
+
+/*-------------------------------------------------*/
+/*-- NOT  */
+/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
+/*-- Puerta NOT
+/*-------------------------------------------------*/
+
+module v35f267_vd54ca1 (
+ input a,
+ output c
+);
+ //-- Puerta NOT
+ 
+ //-- module (input wire a, output wire c);
+ 
+ 
+ assign c = ~a;
+ 
+ 
+ //-- endmodule
+ 
+endmodule
+//---- Top entity
+module vb2090f (
+ input v0e28cb,
+ input v3ca442,
+ output vcbab45
+);
+ wire w0;
+ wire w1;
+ wire w2;
+ assign w0 = v0e28cb;
+ assign w1 = v3ca442;
+ assign vcbab45 = w2;
+ vb2090f_vf4938a vf4938a (
+  .a(w0),
+  .b(w1),
+  .c(w2)
+ );
+endmodule
+
+/*-------------------------------------------------*/
+/*-- AND  */
+/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
+/*-- Puerta AND
+/*-------------------------------------------------*/
+
+module vb2090f_vf4938a (
+ input a,
+ input b,
+ output c
+);
+ //-- Puerta AND
+ 
+ //-- module and (input wire a, input wire b,
+ //--             output wire c);
+ 
+ assign c = a & b;
+ 
+ //-- endmodule
+endmodule
+//---- Top entity
+module v6f058b (
+ input [31:0] v2ebc76,
+ output [7:0] v4a41db,
+ output [7:0] v0d81e4,
+ output [7:0] v6b375c,
+ output [7:0] vd65308
+);
+ wire [0:31] w0;
  wire [0:7] w1;
  wire [0:7] w2;
  wire [0:7] w3;
  wire [0:7] w4;
- wire [0:7] w5;
- wire [0:7] w6;
- wire [0:7] w7;
+ assign w0 = v2ebc76;
+ assign vd65308 = w1;
+ assign v6b375c = w2;
+ assign v0d81e4 = w3;
+ assign v4a41db = w4;
+ v6f058b_v9a2a06 v9a2a06 (
+  .i(w0),
+  .o0(w1),
+  .o1(w2),
+  .o2(w3),
+  .o3(w4)
+ );
+endmodule
+
+/*-------------------------------------------------*/
+/*-- Separador-bus  */
+/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
+/*-- Separador de bus de 32-bits en 4 buses de 8 bits
+/*-------------------------------------------------*/
+
+module v6f058b_v9a2a06 (
+ input [31:0] i,
+ output [7:0] o3,
+ output [7:0] o2,
+ output [7:0] o1,
+ output [7:0] o0
+);
+ assign o3 = i[31:24];
+ assign o2 = i[23:16];
+ assign o1 = i[15:8];
+ assign o0 = i[7:0];
+endmodule
+//---- Top entity
+module v5cc6ec (
+ input vb186da,
+ input v381ebf,
+ input v50d6c6,
+ output vc93bbe
+);
+ wire w0;
+ wire w1;
+ wire w2;
+ wire w3;
+ assign w0 = v50d6c6;
+ assign vc93bbe = w1;
+ assign w2 = v381ebf;
+ assign w3 = vb186da;
+ v5cc6ec_ve4e0df ve4e0df (
+  .sel(w0),
+  .o(w1),
+  .i0(w2),
+  .i1(w3)
+ );
+endmodule
+
+/*-------------------------------------------------*/
+/*-- Mux 2 a 1  */
+/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
+/*-- Multiplexor de 2 a 1
+/*-------------------------------------------------*/
+
+module v5cc6ec_ve4e0df (
+ input i1,
+ input i0,
+ input sel,
+ output o
+);
+ //-- Multiplexor de 2 a 1, 
+ //-- de 8 bits
+ 
+ reg _o;
+ 
+ always @(*) begin
+     case(sel)
+         0: _o = i0;
+         1: _o = i1;
+         default: _o = i0;
+     endcase
+ end
+ 
+ assign o = _o;
+ 
+endmodule
+//---- Top entity
+module v0e64bc #(
+ parameter v207e0d = 1
+) (
+ input v531e20,
+ output v8337bc
+);
+ localparam p2 = v207e0d;
+ wire w0;
+ wire w1;
+ assign v8337bc = w0;
+ assign w1 = v531e20;
+ v0e64bc_v94c6d7 #(
+  .HZ(p2)
+ ) v94c6d7 (
+  .clk_o(w0),
+  .clk(w1)
+ );
+endmodule
+
+/*-------------------------------------------------*/
+/*-- Corazon_Hz  */
+/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
+/*-- Corazon genérico para bombear bits a la frecuencia fijada en Hz (por defecto 1Hz)
+/*-------------------------------------------------*/
+
+module v0e64bc_v94c6d7 #(
+ parameter HZ = 0
+) (
+ input clk,
+ output clk_o
+);
+ 
+ //parameter HZ=1;
+ 
+ //-- Constante para dividir y obtener una frecuencia de 1Hz
+ localparam M = 12000000/HZ;
+ 
+ //-- Calcular el numero de bits para almacenar M
+ localparam N = $clog2(M);
+ 
+ //-- Registro del divisor
+ reg [N-1:0] divcounter;
+ 
+ //-- Temporal clock
+ reg clk_t = 0;
+ 
+ //-- Se usa un contador modulo M/2 para luego
+ //-- pasarlo por un biestable T y dividir la frecuencia
+ //-- entre 2, para que el ciclo de trabajo sea del 50%
+ always @(posedge clk)
+     if (divcounter == M/2) begin
+       clk_t <= 1;
+       divcounter = 0;
+     end 
+     else begin
+       divcounter <=  divcounter + 1;
+       clk_t = 0;
+     end 
+   
+ reg clk_o = 0;  
+     
+ //-- Biestable T para obtener ciclo de trabajo del 50%
+ always @(posedge clk)
+   if (clk_t)
+     clk_o <= ~clk_o;
+ 
+endmodule
+//---- Top entity
+module vf9ed0d (
+ input [7:0] vbfdb97,
+ input [7:0] vc2ef4f,
+ input v78b22f,
+ output [31:0] v961ee9,
+ output [31:0] vd115bb,
+ output [7:0] v84ec18
+);
+ wire w0;
+ wire w1;
+ wire w2;
+ wire w3;
+ wire w4;
+ wire w5;
+ wire w6;
+ wire w7;
  wire w8;
  wire w9;
  wire w10;
- wire w11;
+ wire [0:5] w11;
  wire w12;
  wire w13;
  wire w14;
  wire w15;
- wire w16;
- wire w17;
- wire w18;
- wire [0:5] w19;
+ wire [0:3] w16;
+ wire [0:3] w17;
+ wire [0:1] w18;
+ wire [0:1] w19;
  wire w20;
  wire w21;
  wire w22;
  wire w23;
- wire [0:3] w24;
- wire [0:3] w25;
- wire [0:1] w26;
- wire [0:1] w27;
- wire w28;
- wire w29;
- wire w30;
+ wire w24;
+ wire w25;
+ wire [0:3] w26;
+ wire [0:3] w27;
+ wire [0:7] w28;
+ wire [0:7] w29;
+ wire [0:7] w30;
  wire w31;
  wire w32;
- wire w33;
- wire [0:3] w34;
- wire [0:3] w35;
+ wire [0:7] w33;
+ wire [0:7] w34;
+ wire [0:7] w35;
  wire [0:7] w36;
  wire [0:7] w37;
- wire [0:7] w38;
- wire w39;
- wire w40;
+ wire [0:31] w38;
+ wire [0:31] w39;
+ wire [0:7] w40;
  wire [0:7] w41;
  wire [0:7] w42;
  wire [0:7] w43;
@@ -480,208 +843,222 @@ module vd553c7 (
  wire [0:7] w47;
  wire [0:7] w48;
  wire [0:7] w49;
- assign v95e7d9 = w0;
- assign vfeda54 = w1;
- assign vbab6c8 = w2;
- assign vccf36f = w3;
- assign va4d6fb = w4;
- assign vba6d41 = w5;
- assign v78372c = w6;
- assign v66a578 = w7;
- assign w11 = v78b22f;
- assign w12 = v78b22f;
- assign w13 = v78b22f;
- assign w14 = v78b22f;
- assign w15 = v78b22f;
- assign w16 = v78b22f;
- assign w17 = v78b22f;
- assign w18 = v78b22f;
- assign w36 = vc2ef4f;
- assign w42 = vbfdb97;
- assign w43 = vbfdb97;
- assign w44 = vbfdb97;
+ wire [0:7] w50;
+ wire [0:7] w51;
+ wire [0:7] w52;
+ assign w3 = v78b22f;
+ assign w4 = v78b22f;
+ assign w5 = v78b22f;
+ assign w6 = v78b22f;
+ assign w7 = v78b22f;
+ assign w8 = v78b22f;
+ assign w9 = v78b22f;
+ assign w10 = v78b22f;
+ assign w28 = vc2ef4f;
+ assign v961ee9 = w38;
+ assign vd115bb = w39;
+ assign v84ec18 = w44;
  assign w45 = vbfdb97;
  assign w46 = vbfdb97;
  assign w47 = vbfdb97;
  assign w48 = vbfdb97;
  assign w49 = vbfdb97;
- assign w12 = w11;
- assign w13 = w11;
- assign w13 = w12;
- assign w14 = w11;
- assign w14 = w12;
- assign w14 = w13;
- assign w15 = w11;
- assign w15 = w12;
- assign w15 = w13;
- assign w15 = w14;
- assign w16 = w11;
- assign w16 = w12;
- assign w16 = w13;
- assign w16 = w14;
- assign w16 = w15;
- assign w17 = w11;
- assign w17 = w12;
- assign w17 = w13;
- assign w17 = w14;
- assign w17 = w15;
- assign w17 = w16;
- assign w18 = w11;
- assign w18 = w12;
- assign w18 = w13;
- assign w18 = w14;
- assign w18 = w15;
- assign w18 = w16;
- assign w18 = w17;
- assign w38 = w1;
- assign w43 = w42;
- assign w44 = w42;
- assign w44 = w43;
- assign w45 = w42;
- assign w45 = w43;
- assign w45 = w44;
- assign w46 = w42;
- assign w46 = w43;
- assign w46 = w44;
+ assign w50 = vbfdb97;
+ assign w51 = vbfdb97;
+ assign w52 = vbfdb97;
+ assign w4 = w3;
+ assign w5 = w3;
+ assign w5 = w4;
+ assign w6 = w3;
+ assign w6 = w4;
+ assign w6 = w5;
+ assign w7 = w3;
+ assign w7 = w4;
+ assign w7 = w5;
+ assign w7 = w6;
+ assign w8 = w3;
+ assign w8 = w4;
+ assign w8 = w5;
+ assign w8 = w6;
+ assign w8 = w7;
+ assign w9 = w3;
+ assign w9 = w4;
+ assign w9 = w5;
+ assign w9 = w6;
+ assign w9 = w7;
+ assign w9 = w8;
+ assign w10 = w3;
+ assign w10 = w4;
+ assign w10 = w5;
+ assign w10 = w6;
+ assign w10 = w7;
+ assign w10 = w8;
+ assign w10 = w9;
+ assign w41 = w30;
+ assign w44 = w30;
+ assign w44 = w41;
  assign w46 = w45;
- assign w47 = w42;
- assign w47 = w43;
- assign w47 = w44;
  assign w47 = w45;
  assign w47 = w46;
- assign w48 = w42;
- assign w48 = w43;
- assign w48 = w44;
  assign w48 = w45;
  assign w48 = w46;
  assign w48 = w47;
- assign w49 = w42;
- assign w49 = w43;
- assign w49 = w44;
  assign w49 = w45;
  assign w49 = w46;
  assign w49 = w47;
  assign w49 = w48;
+ assign w50 = w45;
+ assign w50 = w46;
+ assign w50 = w47;
+ assign w50 = w48;
+ assign w50 = w49;
+ assign w51 = w45;
+ assign w51 = w46;
+ assign w51 = w47;
+ assign w51 = w48;
+ assign w51 = w49;
+ assign w51 = w50;
+ assign w52 = w45;
+ assign w52 = w46;
+ assign w52 = w47;
+ assign w52 = w48;
+ assign w52 = w49;
+ assign w52 = w50;
+ assign w52 = w51;
  v89d234 v00cf70 (
-  .vb1c024(w7),
-  .v41eb95(w11),
-  .vf892a0(w30),
-  .v39f831(w42)
- );
- v89d234 v52e8e8 (
-  .vb1c024(w4),
-  .v41eb95(w12),
-  .vf892a0(w31),
-  .v39f831(w43)
- );
- v89d234 v3a923a (
-  .vb1c024(w5),
-  .v41eb95(w13),
-  .vf892a0(w32),
-  .v39f831(w44)
- );
- v89d234 v5a42b0 (
-  .vb1c024(w6),
-  .v41eb95(w14),
-  .vf892a0(w33),
+  .v41eb95(w3),
+  .vf892a0(w22),
+  .vb1c024(w34),
   .v39f831(w45)
  );
- v89d234 vc3d5eb (
-  .vb1c024(w0),
-  .vf892a0(w8),
-  .v41eb95(w15),
+ v89d234 v52e8e8 (
+  .v41eb95(w4),
+  .vf892a0(w23),
+  .vb1c024(w35),
   .v39f831(w46)
  );
- v89d234 v3b4bcb (
-  .vb1c024(w1),
-  .v41eb95(w16),
-  .vf892a0(w39),
-  .v39f831(w41)
+ v89d234 v3a923a (
+  .v41eb95(w5),
+  .vf892a0(w24),
+  .vb1c024(w36),
+  .v39f831(w47)
  );
- v89d234 vdb2ed9 (
-  .vb1c024(w2),
-  .vf892a0(w9),
-  .v41eb95(w17),
+ v89d234 v5a42b0 (
+  .v41eb95(w6),
+  .vf892a0(w25),
+  .vb1c024(w37),
   .v39f831(w48)
  );
- v89d234 ve77b64 (
-  .vb1c024(w3),
-  .vf892a0(w10),
-  .v41eb95(w18),
+ v89d234 vc3d5eb (
+  .vf892a0(w0),
+  .v41eb95(w7),
+  .vb1c024(w40),
   .v39f831(w49)
  );
+ v89d234 v3b4bcb (
+  .v41eb95(w8),
+  .vb1c024(w30),
+  .vf892a0(w31),
+  .v39f831(w33)
+ );
+ v89d234 vdb2ed9 (
+  .vf892a0(w1),
+  .v41eb95(w9),
+  .vb1c024(w42),
+  .v39f831(w51)
+ );
+ v89d234 ve77b64 (
+  .vf892a0(w2),
+  .v41eb95(w10),
+  .vb1c024(w43),
+  .v39f831(w52)
+ );
  v45c913 v46cbae (
-  .v593f43(w8),
-  .vc90115(w9),
-  .v5b73e8(w10),
-  .v930b03(w35),
-  .v2812a7(w40)
+  .v593f43(w0),
+  .vc90115(w1),
+  .v5b73e8(w2),
+  .v930b03(w27),
+  .v2812a7(w32)
  );
  v7404e6 v9184a8 (
-  .v4ce39b(w19),
-  .v595263(w36)
+  .v4ce39b(w11),
+  .v595263(w28)
  );
  vd4bd04 v776aa2 (
-  .v03aaf0(w20),
-  .vee8a83(w21),
-  .v67a3fc(w27)
+  .v03aaf0(w12),
+  .vee8a83(w13),
+  .v67a3fc(w19)
  );
  vd4bd04 v474d28 (
-  .v03aaf0(w22),
-  .vee8a83(w23),
-  .v67a3fc(w26)
+  .v03aaf0(w14),
+  .vee8a83(w15),
+  .v67a3fc(w18)
  );
  vfd8998 v289c22 (
-  .vbb390a(w19),
-  .v45ab8c(w20),
-  .vb85197(w21),
-  .v8f149e(w22),
-  .v7c37b3(w23),
-  .ve0c1b4(w28),
-  .v2c9812(w29)
+  .vbb390a(w11),
+  .v45ab8c(w12),
+  .vb85197(w13),
+  .v8f149e(w14),
+  .v7c37b3(w15),
+  .ve0c1b4(w20),
+  .v2c9812(w21)
  );
  v1c4cc4 va801cf (
-  .v9c304b(w25),
-  .v827425(w26)
+  .v9c304b(w17),
+  .v827425(w18)
  );
  v13d09a ve0ffcc (
-  .vd317b3(w25),
-  .v76af38(w29),
-  .ve2642f(w35)
+  .vd317b3(w17),
+  .v76af38(w21),
+  .ve2642f(w27)
  );
  v1c4cc4 va6e1f2 (
-  .v9c304b(w24),
-  .v827425(w27)
+  .v9c304b(w16),
+  .v827425(w19)
  );
  v13d09a v81f649 (
-  .vd317b3(w24),
-  .v76af38(w28),
-  .ve2642f(w34)
+  .vd317b3(w16),
+  .v76af38(w20),
+  .ve2642f(w26)
  );
  v45c913 v3f14be (
-  .v593f43(w30),
-  .v2812a7(w31),
-  .vc90115(w32),
-  .v5b73e8(w33),
-  .v930b03(w34)
+  .v593f43(w22),
+  .v2812a7(w23),
+  .vc90115(w24),
+  .v5b73e8(w25),
+  .v930b03(w26)
  );
  v359a55 ve3d83e (
-  .vd6b984(w37),
-  .v50d6c6(w40),
-  .vf24dba(w41),
-  .v02d898(w47)
+  .vd6b984(w29),
+  .v50d6c6(w32),
+  .vf24dba(w33),
+  .v02d898(w50)
  );
  v7d7474 v973e98 (
-  .v9c083a(w37),
-  .ve41da3(w38)
+  .v9c083a(w29),
+  .ve41da3(w30)
  );
  v725b7e v1dca89 (
-  .v9fb85f(w39)
+  .v9fb85f(w31)
+ );
+ vb6ddba vc7c352 (
+  .v9999de(w34),
+  .v63d71a(w35),
+  .v32ad8d(w36),
+  .v7a6a68(w37),
+  .v2eef2f(w38)
+ );
+ vb6ddba v72b1e4 (
+  .v2eef2f(w39),
+  .v9999de(w40),
+  .v63d71a(w41),
+  .v32ad8d(w42),
+  .v7a6a68(w43)
  );
 endmodule
 
 /*-------------------------------------------------*/
-/*--   */
+/*-- reg1  */
 /*-- - - - - - - - - - - - - - - - - - - - - - - --*/
 /*-- 
 /*-------------------------------------------------*/
@@ -1021,272 +1398,90 @@ module v7d7474_va0c26a #(
  assign s = a + k;
 endmodule
 //---- Top entity
-module vcfd9ba (
- input v444878,
- input v6a82dd,
- output vd4e5d7
+module vb6ddba (
+ input [7:0] v7a6a68,
+ input [7:0] v32ad8d,
+ input [7:0] v63d71a,
+ input [7:0] v9999de,
+ output [31:0] v2eef2f
 );
- wire w0;
- wire w1;
- wire w2;
- assign vd4e5d7 = w0;
- assign w1 = v444878;
- assign w2 = v6a82dd;
- vcfd9ba_va7041c va7041c (
-  .out(w0),
-  .clk(w1),
-  .in(w2)
+ wire [0:31] w0;
+ wire [0:7] w1;
+ wire [0:7] w2;
+ wire [0:7] w3;
+ wire [0:7] w4;
+ assign v2eef2f = w0;
+ assign w1 = v9999de;
+ assign w2 = v63d71a;
+ assign w3 = v32ad8d;
+ assign w4 = v7a6a68;
+ vb6ddba_v9a2a06 v9a2a06 (
+  .o(w0),
+  .i0(w1),
+  .i1(w2),
+  .i2(w3),
+  .i3(w4)
  );
 endmodule
 
 /*-------------------------------------------------*/
-/*-- Debouncer  */
+/*-- Agregador-bus  */
 /*-- - - - - - - - - - - - - - - - - - - - - - - --*/
-/*-- Remove the rebound on a mechanical switch
+/*-- Agregador de 4 buses en un bus de 32-bits
 /*-------------------------------------------------*/
 
-module vcfd9ba_va7041c (
- input clk,
- input in,
- output out
+module vb6ddba_v9a2a06 (
+ input [7:0] i3,
+ input [7:0] i2,
+ input [7:0] i1,
+ input [7:0] i0,
+ output [31:0] o
 );
- //-- Debouncer Circuit
- //-- It produces a stable output when the
- //-- input signal is bouncing
- 
- reg btn_prev = 0;
- reg btn_out_r = 0;
- 
- reg [16:0] counter = 0;
- 
- 
- always @(posedge clk) begin
- 
-   //-- If btn_prev and btn_in are differents
-   if (btn_prev ^ in == 1'b1) begin
-     
-       //-- Reset the counter
-       counter <= 0;
-       
-       //-- Capture the button status
-       btn_prev <= in;
-   end
-     
-   //-- If no timeout, increase the counter
-   else if (counter[16] == 1'b0)
-       counter <= counter + 1;
-       
-   else
-     //-- Set the output to the stable value
-     btn_out_r <= btn_prev;
- 
- end
- 
- assign out = btn_out_r;
+ assign o = {i3,i2, i1, i0};
  
 endmodule
 //---- Top entity
-module v1b3913 (
- input ved8395,
- input ve78ab8,
- output v3487af
-);
- wire w0;
- wire w1;
- wire w2;
- wire w3;
- wire w4;
- wire w5;
- assign w0 = ve78ab8;
- assign w1 = ved8395;
- assign w4 = ve78ab8;
- assign v3487af = w5;
- assign w4 = w0;
- v1c7dae vbf8366 (
-  .vf54559(w0),
-  .va4102a(w1),
-  .ve8318d(w2)
- );
- v35f267 v5053a8 (
-  .v0e28cb(w2),
-  .vcbab45(w3)
- );
- vb2090f v758f4d (
-  .v0e28cb(w3),
-  .v3ca442(w4),
-  .vcbab45(w5)
- );
-endmodule
-
-/*-------------------------------------------------*/
-/*-- Subida  */
-/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
-/*-- Detector de flanco de subida. Emite un tic cuando detecta un flanco de subida. Versión bloques
-/*-------------------------------------------------*/
-//---- Top entity
-module v1c7dae #(
- parameter v71e305 = 0
-) (
- input va4102a,
- input vf54559,
- output ve8318d
-);
- localparam p2 = v71e305;
- wire w0;
- wire w1;
- wire w3;
- assign w0 = va4102a;
- assign ve8318d = w1;
- assign w3 = vf54559;
- v1c7dae_vb8adf8 #(
-  .INI(p2)
- ) vb8adf8 (
-  .clk(w0),
-  .q(w1),
-  .d(w3)
- );
-endmodule
-
-/*-------------------------------------------------*/
-/*-- Biestable-D  */
-/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
-/*-- Biestable de datos (Tipo D). Cuando se recibe un tic por load se captura el dato
-/*-------------------------------------------------*/
-
-module v1c7dae_vb8adf8 #(
- parameter INI = 0
-) (
- input clk,
- input d,
- output q
-);
- reg q = INI;
- always @(posedge clk)
-   q <= d;
-endmodule
-//---- Top entity
-module v35f267 (
- input v0e28cb,
- output vcbab45
-);
- wire w0;
- wire w1;
- assign w0 = v0e28cb;
- assign vcbab45 = w1;
- v35f267_vd54ca1 vd54ca1 (
-  .a(w0),
-  .c(w1)
- );
-endmodule
-
-/*-------------------------------------------------*/
-/*-- NOT  */
-/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
-/*-- Puerta NOT
-/*-------------------------------------------------*/
-
-module v35f267_vd54ca1 (
- input a,
- output c
-);
- //-- Puerta NOT
- 
- //-- module (input wire a, output wire c);
- 
- 
- assign c = ~a;
- 
- 
- //-- endmodule
- 
-endmodule
-//---- Top entity
-module vb2090f (
- input v0e28cb,
- input v3ca442,
- output vcbab45
-);
- wire w0;
- wire w1;
- wire w2;
- assign w0 = v0e28cb;
- assign w1 = v3ca442;
- assign vcbab45 = w2;
- vb2090f_vf4938a vf4938a (
-  .a(w0),
-  .b(w1),
-  .c(w2)
- );
-endmodule
-
-/*-------------------------------------------------*/
-/*-- AND  */
-/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
-/*-- Puerta AND
-/*-------------------------------------------------*/
-
-module vb2090f_vf4938a (
- input a,
- input b,
- output c
-);
- //-- Puerta AND
- 
- //-- module and (input wire a, input wire b,
- //--             output wire c);
- 
- assign c = a & b;
- 
- //-- endmodule
-endmodule
-//---- Top entity
-module v0bd3c1 #(
+module ve0c76e #(
  parameter v7dcc91 = 44,
  parameter vc7e15e = 16,
  parameter vcb8c66 = 16,
  parameter v9ba8e8 = 0,
- parameter v76b36f = 36,
  parameter vb4c034 = 32,
  parameter v4ecf88 = 80,
  parameter v70f00e = 192,
- parameter v824f7d = 16
+ parameter v824f7d = 16,
+ parameter v76b36f = 36
 ) (
- input [7:0] vc75b49,
- input [7:0] ve0ce24,
- input [7:0] v3610ac,
- input [7:0] v55960f,
- input [7:0] v72c72a,
- input [7:0] v49e9c8,
- input [7:0] v8a86c8,
- input [7:0] v604fda,
+ input [31:0] v234fbd,
+ input [31:0] v1bfd13,
  input [7:0] vfc5572,
  input [7:0] v21ec4d,
  output [7:0] ve6d7e4,
  output [7:0] vfd9d0f,
  output [7:0] v7c37d9
 );
- localparam p27 = vb4c034;
- localparam p28 = v4ecf88;
- localparam p29 = v70f00e;
- localparam p33 = v824f7d;
- localparam p42 = vcb8c66;
- localparam p47 = v7dcc91;
- localparam p48 = vc7e15e;
- localparam p51 = v76b36f;
- localparam p54 = v9ba8e8;
+ localparam p25 = vb4c034;
+ localparam p26 = v4ecf88;
+ localparam p27 = v70f00e;
+ localparam p31 = v824f7d;
+ localparam p39 = vcb8c66;
+ localparam p43 = v7dcc91;
+ localparam p44 = vc7e15e;
+ localparam p47 = v76b36f;
+ localparam p50 = v9ba8e8;
  wire [0:7] w0;
  wire [0:7] w1;
  wire [0:7] w2;
  wire [0:6] w3;
- wire [0:6] w4;
+ wire w4;
  wire w5;
  wire w6;
  wire w7;
  wire w8;
  wire w9;
- wire w10;
- wire [0:7] w11;
- wire [0:3] w12;
+ wire [0:7] w10;
+ wire [0:3] w11;
+ wire w12;
  wire w13;
  wire w14;
  wire w15;
@@ -1294,41 +1489,41 @@ module v0bd3c1 #(
  wire w17;
  wire w18;
  wire w19;
- wire w20;
+ wire [0:7] w20;
  wire [0:7] w21;
  wire [0:7] w22;
  wire [0:7] w23;
- wire [0:1] w24;
- wire [0:7] w25;
- wire [0:7] w26;
+ wire [0:7] w24;
+ wire [0:7] w28;
+ wire [0:7] w29;
  wire [0:7] w30;
- wire [0:7] w31;
  wire [0:7] w32;
+ wire [0:7] w33;
  wire [0:7] w34;
  wire [0:7] w35;
  wire [0:7] w36;
  wire [0:7] w37;
  wire [0:7] w38;
- wire [0:7] w39;
  wire [0:7] w40;
  wire [0:7] w41;
- wire [0:1] w43;
- wire [0:7] w44;
+ wire w42;
  wire [0:7] w45;
- wire w46;
+ wire [0:7] w46;
+ wire [0:7] w48;
  wire [0:7] w49;
- wire [0:7] w50;
- wire [0:7] w52;
+ wire [0:7] w51;
+ wire [0:2] w52;
  wire [0:7] w53;
- wire w55;
- wire [0:7] w56;
- wire [0:2] w57;
- wire [0:7] w58;
- wire [0:7] w59;
- wire [0:7] w60;
- wire [0:7] w61;
- wire [0:7] w62;
- wire [0:7] w63;
+ wire [0:31] w54;
+ wire [0:31] w55;
+ wire [0:1] w56;
+ wire [0:1] w57;
+ wire [0:5] w58;
+ wire w59;
+ wire [0:6] w60;
+ wire w61;
+ wire w62;
+ wire w63;
  wire [0:7] w64;
  wire [0:7] w65;
  wire [0:7] w66;
@@ -1360,187 +1555,113 @@ module v0bd3c1 #(
  wire [0:7] w92;
  wire [0:7] w93;
  wire [0:7] w94;
- wire [0:3] w95;
- wire [0:3] w96;
- wire [0:3] w97;
- wire [0:3] w98;
- wire [0:3] w99;
+ wire [0:7] w95;
+ wire [0:7] w96;
+ wire [0:7] w97;
+ wire [0:7] w98;
+ wire [0:7] w99;
  wire [0:3] w100;
- wire [0:7] w101;
- wire [0:7] w102;
- wire [0:7] w103;
- assign w22 = vfc5572;
- assign ve6d7e4 = w23;
- assign vfd9d0f = w58;
- assign w59 = v3610ac;
- assign w60 = v3610ac;
- assign w61 = v3610ac;
- assign w62 = v3610ac;
- assign w63 = v3610ac;
- assign w64 = v3610ac;
- assign w65 = v3610ac;
- assign w66 = v3610ac;
- assign w67 = v21ec4d;
- assign w68 = ve0ce24;
- assign w69 = ve0ce24;
- assign w70 = ve0ce24;
- assign w71 = ve0ce24;
- assign w72 = ve0ce24;
- assign w73 = ve0ce24;
- assign v7c37d9 = w73;
- assign w74 = ve0ce24;
- assign w75 = ve0ce24;
- assign w76 = ve0ce24;
- assign w77 = ve0ce24;
- assign w78 = ve0ce24;
- assign w79 = ve0ce24;
- assign w80 = ve0ce24;
- assign w82 = vc75b49;
- assign w87 = v55960f;
- assign w90 = v72c72a;
- assign w92 = v8a86c8;
- assign w8 = w5;
+ wire [0:3] w101;
+ wire [0:3] w102;
+ wire [0:3] w103;
+ wire [0:3] w104;
+ wire [0:3] w105;
+ wire [0:7] w106;
+ wire [0:7] w107;
+ wire [0:7] w108;
+ wire [0:7] w109;
+ assign w21 = vfc5572;
+ assign ve6d7e4 = w22;
+ assign vfd9d0f = w53;
+ assign w54 = v234fbd;
+ assign w55 = v1bfd13;
+ assign w72 = v21ec4d;
+ assign v7c37d9 = w77;
+ assign w7 = w4;
+ assign w8 = w4;
+ assign w8 = w7;
  assign w9 = w5;
- assign w9 = w8;
- assign w10 = w6;
- assign w13 = w6;
- assign w13 = w10;
- assign w15 = w5;
- assign w15 = w8;
- assign w15 = w9;
- assign w17 = w7;
+ assign w12 = w5;
+ assign w12 = w9;
+ assign w14 = w4;
+ assign w14 = w7;
+ assign w14 = w8;
+ assign w16 = w6;
+ assign w18 = w17;
+ assign w19 = w17;
  assign w19 = w18;
- assign w20 = w18;
- assign w20 = w19;
- assign w25 = w21;
- assign w32 = w26;
+ assign w23 = w20;
+ assign w30 = w24;
+ assign w33 = w32;
+ assign w34 = w32;
+ assign w34 = w33;
+ assign w35 = w32;
+ assign w35 = w33;
  assign w35 = w34;
+ assign w36 = w32;
+ assign w36 = w33;
  assign w36 = w34;
  assign w36 = w35;
+ assign w37 = w32;
+ assign w37 = w33;
  assign w37 = w34;
  assign w37 = w35;
  assign w37 = w36;
+ assign w38 = w32;
+ assign w38 = w33;
  assign w38 = w34;
  assign w38 = w35;
  assign w38 = w36;
  assign w38 = w37;
- assign w39 = w34;
- assign w39 = w35;
- assign w39 = w36;
- assign w39 = w37;
- assign w39 = w38;
- assign w40 = w34;
- assign w40 = w35;
- assign w40 = w36;
- assign w40 = w37;
- assign w40 = w38;
- assign w40 = w39;
- assign w41 = w34;
- assign w41 = w35;
- assign w41 = w36;
- assign w41 = w37;
- assign w41 = w38;
- assign w41 = w39;
- assign w41 = w40;
- assign w60 = w59;
- assign w61 = w59;
- assign w61 = w60;
- assign w62 = w59;
- assign w62 = w60;
- assign w62 = w61;
- assign w63 = w59;
- assign w63 = w60;
- assign w63 = w61;
- assign w63 = w62;
- assign w64 = w59;
- assign w64 = w60;
- assign w64 = w61;
- assign w64 = w62;
- assign w64 = w63;
- assign w65 = w59;
- assign w65 = w60;
- assign w65 = w61;
- assign w65 = w62;
- assign w65 = w63;
  assign w65 = w64;
- assign w66 = w59;
- assign w66 = w60;
- assign w66 = w61;
- assign w66 = w62;
- assign w66 = w63;
  assign w66 = w64;
  assign w66 = w65;
+ assign w67 = w64;
+ assign w67 = w65;
+ assign w67 = w66;
+ assign w68 = w64;
+ assign w68 = w65;
+ assign w68 = w66;
+ assign w68 = w67;
+ assign w69 = w64;
+ assign w69 = w65;
+ assign w69 = w66;
+ assign w69 = w67;
  assign w69 = w68;
+ assign w70 = w64;
+ assign w70 = w65;
+ assign w70 = w66;
+ assign w70 = w67;
  assign w70 = w68;
  assign w70 = w69;
+ assign w71 = w64;
+ assign w71 = w65;
+ assign w71 = w66;
+ assign w71 = w67;
  assign w71 = w68;
  assign w71 = w69;
  assign w71 = w70;
- assign w72 = w68;
- assign w72 = w69;
- assign w72 = w70;
- assign w72 = w71;
- assign w73 = w68;
- assign w73 = w69;
- assign w73 = w70;
- assign w73 = w71;
- assign w73 = w72;
- assign w74 = w68;
- assign w74 = w69;
- assign w74 = w70;
- assign w74 = w71;
- assign w74 = w72;
  assign w74 = w73;
- assign w75 = w68;
- assign w75 = w69;
- assign w75 = w70;
- assign w75 = w71;
- assign w75 = w72;
  assign w75 = w73;
  assign w75 = w74;
- assign w76 = w68;
- assign w76 = w69;
- assign w76 = w70;
- assign w76 = w71;
- assign w76 = w72;
  assign w76 = w73;
  assign w76 = w74;
  assign w76 = w75;
- assign w77 = w68;
- assign w77 = w69;
- assign w77 = w70;
- assign w77 = w71;
- assign w77 = w72;
  assign w77 = w73;
  assign w77 = w74;
  assign w77 = w75;
  assign w77 = w76;
- assign w78 = w68;
- assign w78 = w69;
- assign w78 = w70;
- assign w78 = w71;
- assign w78 = w72;
  assign w78 = w73;
  assign w78 = w74;
  assign w78 = w75;
  assign w78 = w76;
  assign w78 = w77;
- assign w79 = w68;
- assign w79 = w69;
- assign w79 = w70;
- assign w79 = w71;
- assign w79 = w72;
  assign w79 = w73;
  assign w79 = w74;
  assign w79 = w75;
  assign w79 = w76;
  assign w79 = w77;
  assign w79 = w78;
- assign w80 = w68;
- assign w80 = w69;
- assign w80 = w70;
- assign w80 = w71;
- assign w80 = w72;
  assign w80 = w73;
  assign w80 = w74;
  assign w80 = w75;
@@ -1548,21 +1669,45 @@ module v0bd3c1 #(
  assign w80 = w77;
  assign w80 = w78;
  assign w80 = w79;
- assign w96 = w95;
- assign w98 = w97;
- assign w99 = w97;
- assign w99 = w98;
- assign w100 = w97;
- assign w100 = w98;
- assign w100 = w99;
+ assign w81 = w73;
+ assign w81 = w74;
+ assign w81 = w75;
+ assign w81 = w76;
+ assign w81 = w77;
+ assign w81 = w78;
+ assign w81 = w79;
+ assign w81 = w80;
+ assign w82 = w73;
+ assign w82 = w74;
+ assign w82 = w75;
+ assign w82 = w76;
+ assign w82 = w77;
+ assign w82 = w78;
+ assign w82 = w79;
+ assign w82 = w80;
+ assign w82 = w81;
+ assign w90 = w89;
+ assign w91 = w89;
+ assign w91 = w90;
+ assign w92 = w89;
+ assign w92 = w90;
+ assign w92 = w91;
+ assign w101 = w100;
+ assign w103 = w102;
+ assign w104 = w102;
+ assign w104 = w103;
+ assign w105 = w102;
+ assign w105 = w103;
+ assign w105 = w104;
+ assign w109 = w108;
  v36136f v2c9959 (
-  .v593755(w61),
-  .v5be714(w70),
-  .vd006e6(w94)
+  .v593755(w66),
+  .v5be714(w75),
+  .vd006e6(w99)
  );
  v323be2 v8bf8fe (
   .v3515d4(w0),
-  .v9bea93(w60)
+  .v9bea93(w65)
  );
  v7d7474 vb06c37 (
   .ve41da3(w0),
@@ -1570,237 +1715,264 @@ module v0bd3c1 #(
  );
  v36136f vf52c15 (
   .v593755(w1),
-  .v5be714(w69),
-  .vd006e6(w93)
+  .v5be714(w74),
+  .vd006e6(w97)
  );
  v85651a vc31643 (
-  .vc96239(w63),
-  .vea7b5b(w74),
-  .v274c22(w89)
+  .vc96239(w68),
+  .vea7b5b(w78),
+  .v274c22(w94)
  );
  v323be2 v760dc4 (
   .v9bea93(w2),
-  .v3515d4(w88)
+  .v3515d4(w93)
  );
  v85651a vd0cd61 (
   .v274c22(w2),
-  .vc96239(w62),
-  .vea7b5b(w72)
+  .vc96239(w67),
+  .vea7b5b(w76)
  );
  vaf6fc9 v7d8ceb (
-  .vb61f66(w3),
-  .va191ad(w85)
- );
- vc80943 v15df47 (
-  .v1ec852(w3),
-  .v595263(w76)
+  .vb61f66(w60),
+  .va191ad(w87)
  );
  v6348d5 v2201b2 (
-  .vcff9d0(w4),
-  .v869a97(w86)
+  .vcff9d0(w3),
+  .v869a97(w88)
  );
  vc80943 va17d28 (
-  .v1ec852(w4),
-  .v595263(w75)
+  .v1ec852(w3),
+  .v595263(w90)
  );
  v27fd6d vb1a3a7 (
-  .v18e78c(w6),
-  .v9f69ad(w65),
-  .v9892c7(w78)
+  .v18e78c(w5),
+  .v9f69ad(w70),
+  .v9892c7(w80)
  );
  va21ae0 v538e54 (
-  .v18e78c(w5),
-  .v40cb98(w64),
-  .v4145bb(w77)
+  .v18e78c(w4),
+  .v40cb98(w69),
+  .v4145bb(w79)
  );
  v24496a v75955a (
-  .v0e28cb(w5),
-  .v3ca442(w6),
-  .vcbab45(w7)
+  .v0e28cb(w4),
+  .v3ca442(w5),
+  .vcbab45(w6)
  );
  v528969 v7d7539 (
-  .v0e28cb(w7),
-  .v3ca442(w8),
-  .vcbab45(w16)
+  .v0e28cb(w6),
+  .v3ca442(w7),
+  .vcbab45(w15)
  );
  v528969 v7e0594 (
-  .v0e28cb(w9),
-  .v3ca442(w10),
-  .vcbab45(w14)
+  .v0e28cb(w8),
+  .v3ca442(w9),
+  .vcbab45(w13)
  );
  v36136f v90000b (
-  .v593755(w11),
-  .v5be714(w71),
-  .vd006e6(w91)
+  .v593755(w10),
+  .v5be714(w89),
+  .vd006e6(w96)
  );
  v917222 vd81517 (
-  .va191ad(w11),
-  .v285646(w12),
-  .v766044(w97)
+  .va191ad(w10),
+  .v285646(w11),
+  .v766044(w102)
  );
  va0b8df ve9245a (
-  .va50a91(w12)
+  .va50a91(w11)
  );
  v7263b9 v74e9a4 (
-  .v737e15(w13),
-  .vf0dd0a(w14),
-  .v15c355(w15),
-  .v1b2099(w16),
-  .ve5ee9d(w17),
-  .v7fcaae(w18),
-  .v858373(w19),
-  .v21d803(w20),
-  .va191ad(w81)
+  .v737e15(w12),
+  .vf0dd0a(w13),
+  .v15c355(w14),
+  .v1b2099(w15),
+  .ve5ee9d(w16),
+  .v7fcaae(w17),
+  .v858373(w18),
+  .v21d803(w19),
+  .va191ad(w83)
  );
  v21cfcc v214df7 (
-  .v9fb85f(w18)
+  .v9fb85f(w17)
  );
  v49d51e vd141a5 (
-  .vbdd51f(w21),
-  .v3fb88b(w23),
-  .vb4ed69(w25),
-  .vd48707(w59),
-  .vb6bab2(w67),
-  .v3f3f35(w68),
-  .vcd2a33(w81),
-  .v31c944(w83),
-  .v06410a(w84),
-  .v71c62f(w85),
-  .va541fd(w86),
-  .v9b8a50(w88),
-  .v30db33(w89),
-  .v21e136(w91),
-  .v062092(w93),
-  .v3d1227(w94),
-  .ve81325(w95)
+  .vbdd51f(w20),
+  .v3fb88b(w22),
+  .vb4ed69(w23),
+  .vd48707(w64),
+  .vb6bab2(w72),
+  .v3f3f35(w73),
+  .vcd2a33(w83),
+  .v31c944(w85),
+  .v06410a(w86),
+  .v71c62f(w87),
+  .va541fd(w88),
+  .v9b8a50(w93),
+  .v30db33(w94),
+  .v21e136(w96),
+  .v062092(w97),
+  .v3d1227(w99),
+  .ve81325(w100)
  );
  v3bf99b vb4fc85 (
-  .vb096dc(w21)
+  .vb096dc(w20)
  );
  v73403c v068e8c (
-  .v595263(w22),
-  .vf9119c(w95),
-  .v85accc(w97)
+  .v595263(w21),
+  .vf9119c(w100),
+  .v85accc(w102)
  );
  v70125e vfcd93f (
-  .ve57f84(w24),
-  .v21e136(w66),
-  .v062092(w79),
-  .v3d1227(w82),
-  .v3fb88b(w84),
-  .vbdd51f(w87)
+  .ve57f84(w56),
+  .v21e136(w71),
+  .v062092(w81),
+  .vbdd51f(w84),
+  .v3fb88b(w86),
+  .v3d1227(w92)
  );
  v18cbcb v5bc727 (
-  .v735395(w24),
-  .v0daf7d(w43),
-  .v930b03(w98)
+  .v0daf7d(w56),
+  .v735395(w57),
+  .v930b03(w103)
  );
  v49d51e v325b10 (
-  .vcd2a33(w26),
-  .vb6bab2(w30),
-  .vd48707(w31),
-  .vb4ed69(w32),
-  .v3d1227(w34),
-  .v062092(w35),
-  .v21e136(w36),
-  .vbdd51f(w37),
-  .v30db33(w38),
-  .v9b8a50(w39),
-  .va541fd(w40),
-  .v71c62f(w41),
-  .v3fb88b(w58),
-  .ve81325(w96),
-  .v3f3f35(w101),
-  .v31c944(w102),
-  .v06410a(w103)
+  .vcd2a33(w24),
+  .vb6bab2(w28),
+  .vd48707(w29),
+  .vb4ed69(w30),
+  .v3d1227(w32),
+  .v062092(w33),
+  .v21e136(w34),
+  .v30db33(w35),
+  .v9b8a50(w36),
+  .va541fd(w37),
+  .v71c62f(w38),
+  .v3fb88b(w53),
+  .ve81325(w101),
+  .v3f3f35(w106),
+  .v31c944(w107),
+  .v06410a(w108),
+  .vbdd51f(w109)
+ );
+ v5ad97e #(
+  .vc5c8ea(p25)
+ ) v04d8fd (
+  .v26dbdb(w24)
+ );
+ v5ad97e #(
+  .vc5c8ea(p26)
+ ) v4cc0bc (
+  .v26dbdb(w28)
  );
  v5ad97e #(
   .vc5c8ea(p27)
- ) v04d8fd (
-  .v26dbdb(w26)
- );
- v5ad97e #(
-  .vc5c8ea(p28)
- ) v4cc0bc (
-  .v26dbdb(w30)
- );
- v5ad97e #(
-  .vc5c8ea(p29)
  ) vf72751 (
-  .v26dbdb(w31)
+  .v26dbdb(w29)
  );
  v5ad97e #(
-  .vc5c8ea(p33)
+  .vc5c8ea(p31)
  ) v32e16a (
-  .v26dbdb(w34)
+  .v26dbdb(w32)
  );
  v5ad97e #(
-  .vc5c8ea(p42)
+  .vc5c8ea(p39)
  ) v8898d4 (
-  .v26dbdb(w45)
+  .v26dbdb(w41)
  );
  v9f8856 ve26ac1 (
-  .v276bb9(w43),
-  .va191ad(w44)
+  .va191ad(w40),
+  .v276bb9(w57)
  );
  vd63ed5 v7cd2a6 (
-  .vea7b5b(w44),
-  .vc96239(w45),
-  .v274c22(w103)
+  .vea7b5b(w40),
+  .vc96239(w41),
+  .v274c22(w108)
  );
  v147de6 v17015d (
-  .v9ffacd(w46),
-  .v930b03(w99)
+  .v9ffacd(w42),
+  .v930b03(w104)
  );
  v359a55 v44a780 (
-  .v50d6c6(w46),
-  .v02d898(w80),
-  .vf24dba(w83),
-  .vd6b984(w92)
+  .v50d6c6(w42),
+  .v02d898(w82),
+  .vf24dba(w85),
+  .vd6b984(w95)
  );
  v359a55 ve65d04 (
-  .vd6b984(w49),
-  .v02d898(w50),
-  .vf24dba(w102)
+  .vd6b984(w45),
+  .v02d898(w46),
+  .vf24dba(w107)
+ );
+ v5ad97e #(
+  .vc5c8ea(p43)
+ ) v38cf94 (
+  .v26dbdb(w46)
+ );
+ v5ad97e #(
+  .vc5c8ea(p44)
+ ) vca1782 (
+  .v26dbdb(w45)
  );
  v5ad97e #(
   .vc5c8ea(p47)
- ) v38cf94 (
-  .v26dbdb(w50)
- );
- v5ad97e #(
-  .vc5c8ea(p48)
- ) vca1782 (
-  .v26dbdb(w49)
- );
- v5ad97e #(
-  .vc5c8ea(p51)
  ) v2438f7 (
-  .v26dbdb(w56)
+  .v26dbdb(w51)
  );
  v448035 v2610ac (
-  .v84546f(w52),
-  .v31c84d(w57)
+  .v84546f(w48),
+  .v31c84d(w52)
  );
  v85651a vd41a3f (
-  .vc96239(w52),
-  .v274c22(w53),
-  .vea7b5b(w90)
+  .vc96239(w48),
+  .v274c22(w49),
+  .vea7b5b(w98)
  );
  v10466b #(
-  .v16d6b8(p54)
+  .v16d6b8(p50)
  ) vfb5f49 (
-  .v633638(w53),
-  .v18e78c(w55)
+  .v633638(w49),
+  .v18e78c(w62)
  );
  vdc50be v2ac06e (
-  .v76af38(w55),
-  .vea7b5b(w56),
-  .v274c22(w101)
+  .vea7b5b(w51),
+  .v76af38(w63),
+  .v274c22(w106)
  );
  v30a3ea v00f83d (
-  .vf96989(w57),
-  .v930b03(w100)
+  .vf96989(w52),
+  .v9ffacd(w61),
+  .v930b03(w105)
+ );
+ v6f058b v240f1c (
+  .v2ebc76(w54),
+  .v0d81e4(w64),
+  .v6b375c(w73),
+  .v4a41db(w84),
+  .vd65308(w89)
+ );
+ v6f058b ve0edfa (
+  .v2ebc76(w55),
+  .v0d81e4(w95),
+  .vd65308(w98)
+ );
+ ve493b2 v544c21 (
+ 
+ );
+ v7107c6 vb2a685 (
+  .ve83d32(w58),
+  .v2c4c48(w59),
+  .v595263(w91)
+ );
+ v80fc29 v4ea14d (
+  .vf39709(w58),
+  .v14ddcc(w59),
+  .v1a0366(w60)
+ );
+ v816138 vf03905 (
+  .v3ca442(w61),
+  .v0e28cb(w62),
+  .vcbab45(w63)
  );
 endmodule
 
@@ -1953,39 +2125,6 @@ module vaf6fc9_v9a2a06 (
  
 endmodule
 //---- Top entity
-module vc80943 (
- input [7:0] v595263,
- output v57076f,
- output [6:0] v1ec852
-);
- wire [0:7] w0;
- wire w1;
- wire [0:6] w2;
- assign w0 = v595263;
- assign v57076f = w1;
- assign v1ec852 = w2;
- vc80943_v9a2a06 v9a2a06 (
-  .i(w0),
-  .o1(w1),
-  .o0(w2)
- );
-endmodule
-
-/*-------------------------------------------------*/
-/*-- Separador-bus-1-7  */
-/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
-/*-- Separador de bus de 8-bits en 2 buses de 1 y 7 bits
-/*-------------------------------------------------*/
-
-module vc80943_v9a2a06 (
- input [7:0] i,
- output o1,
- output [6:0] o0
-);
- assign o1 = i[7];
- assign o0 = i[6:0];
-endmodule
-//---- Top entity
 module v6348d5 (
  input [6:0] vcff9d0,
  input v428b2b,
@@ -2017,6 +2156,39 @@ module v6348d5_v9a2a06 (
 );
  assign o = {i1, i0};
  
+endmodule
+//---- Top entity
+module vc80943 (
+ input [7:0] v595263,
+ output v57076f,
+ output [6:0] v1ec852
+);
+ wire [0:7] w0;
+ wire w1;
+ wire [0:6] w2;
+ assign w0 = v595263;
+ assign v57076f = w1;
+ assign v1ec852 = w2;
+ vc80943_v9a2a06 v9a2a06 (
+  .i(w0),
+  .o1(w1),
+  .o0(w2)
+ );
+endmodule
+
+/*-------------------------------------------------*/
+/*-- Separador-bus-1-7  */
+/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
+/*-- Separador de bus de 8-bits en 2 buses de 1 y 7 bits
+/*-------------------------------------------------*/
+
+module vc80943_v9a2a06 (
+ input [7:0] i,
+ output o1,
+ output [6:0] o0
+);
+ assign o1 = i[7];
+ assign o0 = i[6:0];
 endmodule
 //---- Top entity
 module v27fd6d (
@@ -2778,4 +2950,161 @@ module v30a3ea_v9a2a06 (
 );
  assign o1 = i[3];
  assign o0 = i[2:0];
+endmodule
+//---- Top entity
+module ve493b2 #(
+ parameter vaf1d6e = 0
+) (
+ input [7:0] vdf5b7a,
+ input vb6a1db,
+ output [7:0] v2cc258
+);
+ localparam p0 = vaf1d6e;
+ wire [0:7] w1;
+ wire [0:7] w2;
+ wire w3;
+ assign w1 = vdf5b7a;
+ assign v2cc258 = w2;
+ assign w3 = vb6a1db;
+ ve493b2_vd80544 #(
+  .BIT(p0)
+ ) vd80544 (
+  .i(w1),
+  .o(w2),
+  .a(w3)
+ );
+endmodule
+
+/*-------------------------------------------------*/
+/*-- Insert-1-bit  */
+/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
+/*-- Inyectar el valor de un cable por el bit indicado de un bus
+/*-------------------------------------------------*/
+
+module ve493b2_vd80544 #(
+ parameter BIT = 0
+) (
+ input [7:0] i,
+ input a,
+ output [7:0] o
+);
+ reg [7:0] o;
+ 
+ always @(*) begin
+ 
+  o[7:0] = i[7:0];
+  o[BIT] = a;
+  
+ end
+endmodule
+//---- Top entity
+module v7107c6 (
+ input [7:0] v595263,
+ output [7:2] ve83d32,
+ output v2c4c48,
+ output v2b13a4
+);
+ wire [0:7] w0;
+ wire w1;
+ wire w2;
+ wire [0:5] w3;
+ assign w0 = v595263;
+ assign v2c4c48 = w1;
+ assign v2b13a4 = w2;
+ assign ve83d32 = w3;
+ v7107c6_v9a2a06 v9a2a06 (
+  .i(w0),
+  .o1(w1),
+  .o0(w2),
+  .o2(w3)
+ );
+endmodule
+
+/*-------------------------------------------------*/
+/*-- Separador-bus-6-1-1  */
+/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
+/*-- Separador de bus de 8-bits en 1 buses de 6 bits y dos cables sueltos
+/*-------------------------------------------------*/
+
+module v7107c6_v9a2a06 (
+ input [7:0] i,
+ output [7:2] o2,
+ output o1,
+ output o0
+);
+ assign o2 = i[7:2];
+ assign o1 = i[1];
+ assign o0 = i[0];
+endmodule
+//---- Top entity
+module v80fc29 (
+ input [5:0] vf39709,
+ input v14ddcc,
+ output [6:0] v1a0366
+);
+ wire w0;
+ wire [0:6] w1;
+ wire [0:5] w2;
+ assign w0 = v14ddcc;
+ assign v1a0366 = w1;
+ assign w2 = vf39709;
+ v80fc29_v9a2a06 v9a2a06 (
+  .i0(w0),
+  .o(w1),
+  .i1(w2)
+ );
+endmodule
+
+/*-------------------------------------------------*/
+/*-- 7bits-bus-joiner-6-1  */
+/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
+/*-- Join a 6-bit bus and 1 one into a 7-bits bus
+/*-------------------------------------------------*/
+
+module v80fc29_v9a2a06 (
+ input [5:0] i1,
+ input i0,
+ output [6:0] o
+);
+ assign o = {i1, i0};
+ 
+endmodule
+//---- Top entity
+module v816138 (
+ input v0e28cb,
+ input v3ca442,
+ output vcbab45
+);
+ wire w0;
+ wire w1;
+ wire w2;
+ assign w0 = v0e28cb;
+ assign w1 = v3ca442;
+ assign vcbab45 = w2;
+ v816138_vf4938a vf4938a (
+  .a(w0),
+  .b(w1),
+  .c(w2)
+ );
+endmodule
+
+/*-------------------------------------------------*/
+/*-- OR  */
+/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
+/*-- Puerta OR
+/*-------------------------------------------------*/
+
+module v816138_vf4938a (
+ input a,
+ input b,
+ output c
+);
+ //-- Puerta OR
+ 
+ //-- module and (input wire a, input wire b,
+ //--             output wire c);
+ 
+ assign c = a | b;
+ 
+ //-- endmodule
 endmodule

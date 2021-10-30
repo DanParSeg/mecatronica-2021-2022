@@ -886,6 +886,61 @@
           }
         },
         {
+          "id": "b4e22d66-e4f1-4e17-9506-acf405832789",
+          "type": "basic.output",
+          "data": {
+            "name": "PC",
+            "range": "[7:0]",
+            "pins": [
+              {
+                "index": "7",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "6",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "5",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "4",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "3",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "2",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "1",
+                "name": "",
+                "value": ""
+              },
+              {
+                "index": "0",
+                "name": "",
+                "value": ""
+              }
+            ],
+            "virtual": true
+          },
+          "position": {
+            "x": 1440,
+            "y": 1608
+          }
+        },
+        {
           "id": "ffcaa855-56c9-4075-9071-f695ca457b2b",
           "type": "basic.outputLabel",
           "data": {
@@ -1834,6 +1889,17 @@
           "target": {
             "block": "cf1810fd-ac7b-4e56-a071-5b47c3a93440",
             "port": "4c40d744-35d5-4f01-86ab-2bca91da8697"
+          },
+          "size": 8
+        },
+        {
+          "source": {
+            "block": "97db815f-fbc6-4472-8be2-06201f1cacc3",
+            "port": "d3e4f800-c611-4f65-88e7-8b7d2def0021"
+          },
+          "target": {
+            "block": "b4e22d66-e4f1-4e17-9506-acf405832789",
+            "port": "in"
           },
           "size": 8
         }
