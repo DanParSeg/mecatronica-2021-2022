@@ -18,6 +18,7 @@ opCodes={
     "frst":"e",
 }
 
+
 def binArgs(args):
     return hex(int(args, 2))[2:]
 
@@ -36,6 +37,8 @@ def regArgs(args):
 
 def argCodes(args):
     args=args.lower()
+    if(args[0]==":"):#para poner tags como argumento, requiere postprocesado
+        return args
     if(args[0]=="r"):
         return regArgs(args)
     if(len(args)==4):
@@ -44,14 +47,24 @@ def argCodes(args):
         return args
 
 import sys
+
+i=0
+tags={}
 program = open(sys.argv[1], "r")
-for instr in program:
-    if(instr[0]=="#"):
+for line in program:
+    line=line.strip()#elimina espacios principio final (para poder tabular)
+    if(len(line)==0):#elimina lineas vacias
         continue
-    instr=instr.split()
-    if(len(instr)==0):
+    if(line[0]=="#"):#elimina comentarios
         continue
-    if(len(instr)==1):
+    if(line[0]==":"):#":" al principio de una linea para añadir un tag
+        tags[line]=i
+        continue
+
+    instr=line.split()
+    if(len(instr)==1):#si la instruccion no tiene args pone 0 como arg
         instr.append("0")
     print(str(opCodes[instr[0]])+argCodes(instr[1]),end=" ")
+    i+=1
 print()
+print(tags)

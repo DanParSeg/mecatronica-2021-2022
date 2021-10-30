@@ -5,7 +5,7 @@
 //---- Top entity
 module main #(
  parameter v27a8d5 = "v27a8d5.list",
- parameter v169d65 = 20
+ parameter v169d65 = 100
 ) (
  input v4a48f8,
  input vb61f9c,
@@ -31,12 +31,12 @@ module main #(
  wire [0:7] w16;
  wire [0:7] w17;
  wire [0:7] w18;
- wire w19;
+ wire [0:7] w19;
  wire [0:7] w20;
  wire [0:7] w21;
  wire [0:7] w22;
  wire [0:7] w23;
- wire [0:7] w24;
+ wire w24;
  wire w25;
  wire w26;
  wire w27;
@@ -45,14 +45,18 @@ module main #(
  wire w30;
  assign w8 = v4a48f8;
  assign w9 = vb61f9c;
- assign vc9977b = w24;
+ assign vc9977b = w23;
+ assign w24 = vd71040;
  assign w25 = vd71040;
  assign w26 = vd71040;
  assign w27 = vd71040;
  assign w14 = w13;
- assign w22 = w17;
- assign w23 = w16;
+ assign w21 = w17;
+ assign w22 = w16;
+ assign w25 = w24;
+ assign w26 = w24;
  assign w26 = w25;
+ assign w27 = w24;
  assign w27 = w25;
  assign w27 = w26;
  assign w29 = w28;
@@ -61,9 +65,9 @@ module main #(
  v05e8eb v45c5c8 (
   .v23dc54(w4),
   .va136b0(w5),
-  .vba32a6(w20),
-  .v157610(w21),
-  .vcc2c4f(w23),
+  .vba32a6(w19),
+  .v157610(w20),
+  .vcc2c4f(w22),
   .v922e3d(w28)
  );
  v05e8eb #(
@@ -87,7 +91,7 @@ module main #(
  );
  v7404e6 v0ef5e7 (
   .vd7d1f4(w3),
-  .v595263(w22)
+  .v595263(w21)
  );
  vfc9dac v3c0180 (
   .v8b19dd(w3),
@@ -106,18 +110,17 @@ module main #(
  );
  v6f058b v0591fa (
   .v2ebc76(w13),
-  .vd65308(w24)
+  .v4a41db(w23)
  );
  v5cc6ec v4a3762 (
   .v50d6c6(w9),
   .v381ebf(w11),
-  .vb186da(w19),
+  .vb186da(w24),
   .vc93bbe(w28)
  );
  v0e64bc #(
   .v207e0d(p10)
  ) v8e1000 (
-  .v8337bc(w19),
   .v531e20(w27)
  );
  vf9ed0d vdd4e2b (
@@ -134,8 +137,8 @@ module main #(
   .ve6d7e4(w16),
   .vfd9d0f(w17),
   .vfc5572(w18),
-  .v21ec4d(w20),
-  .v7c37d9(w21)
+  .v21ec4d(w19),
+  .v7c37d9(w20)
  );
 endmodule
 
