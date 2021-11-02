@@ -61,6 +61,8 @@ for line in program:
         tags[line]=i
         continue
 
+    
+
     instr=line.split()
     if(len(instr)==1):#si la instruccion no tiene args pone 0 como arg
         instr.append("0")

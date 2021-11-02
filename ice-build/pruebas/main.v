@@ -10,10 +10,12 @@ module main #(
  input v4a48f8,
  input vb61f9c,
  input vd71040,
- output [7:0] vc9977b
+ output [7:0] v29e050,
+ output [7:0] v6a9212,
+ output [7:0] v862b7e
 );
  localparam p6 = v27a8d5;
- localparam p10 = v169d65;
+ localparam p9 = v169d65;
  wire w0;
  wire w1;
  wire [0:7] w2;
@@ -22,53 +24,112 @@ module main #(
  wire w5;
  wire w7;
  wire w8;
- wire w9;
- wire w11;
- wire [0:7] w12;
+ wire [0:7] w10;
+ wire [0:31] w11;
+ wire [0:31] w12;
  wire [0:31] w13;
- wire [0:31] w14;
- wire [0:31] w15;
+ wire [0:7] w14;
+ wire [0:7] w15;
  wire [0:7] w16;
  wire [0:7] w17;
  wire [0:7] w18;
  wire [0:7] w19;
  wire [0:7] w20;
- wire [0:7] w21;
- wire [0:7] w22;
+ wire w21;
+ wire w22;
  wire [0:7] w23;
- wire w24;
- wire w25;
+ wire [0:7] w24;
+ wire [0:7] w25;
  wire w26;
  wire w27;
  wire w28;
  wire w29;
  wire w30;
- assign w8 = v4a48f8;
- assign w9 = vb61f9c;
- assign vc9977b = w23;
- assign w24 = vd71040;
- assign w25 = vd71040;
- assign w26 = vd71040;
+ wire w31;
+ wire w32;
+ wire w33;
+ wire w34;
+ wire w35;
+ wire w36;
+ wire w37;
+ wire w38;
+ wire w39;
+ assign w7 = v4a48f8;
+ assign w8 = vb61f9c;
+ assign w21 = vd71040;
+ assign v862b7e = w23;
+ assign v6a9212 = w24;
+ assign v29e050 = w25;
  assign w27 = vd71040;
- assign w14 = w13;
- assign w21 = w17;
- assign w22 = w16;
- assign w25 = w24;
- assign w26 = w24;
- assign w26 = w25;
- assign w27 = w24;
- assign w27 = w25;
- assign w27 = w26;
- assign w29 = w28;
- assign w30 = w28;
+ assign w28 = vd71040;
+ assign w12 = w11;
+ assign w19 = w15;
+ assign w20 = w14;
+ assign w27 = w21;
+ assign w28 = w21;
+ assign w28 = w27;
  assign w30 = w29;
+ assign w31 = w29;
+ assign w31 = w30;
+ assign w32 = w29;
+ assign w32 = w30;
+ assign w32 = w31;
+ assign w33 = w29;
+ assign w33 = w30;
+ assign w33 = w31;
+ assign w33 = w32;
+ assign w34 = w29;
+ assign w34 = w30;
+ assign w34 = w31;
+ assign w34 = w32;
+ assign w34 = w33;
+ assign w35 = w29;
+ assign w35 = w30;
+ assign w35 = w31;
+ assign w35 = w32;
+ assign w35 = w33;
+ assign w35 = w34;
+ assign w36 = w29;
+ assign w36 = w30;
+ assign w36 = w31;
+ assign w36 = w32;
+ assign w36 = w33;
+ assign w36 = w34;
+ assign w36 = w35;
+ assign w37 = w29;
+ assign w37 = w30;
+ assign w37 = w31;
+ assign w37 = w32;
+ assign w37 = w33;
+ assign w37 = w34;
+ assign w37 = w35;
+ assign w37 = w36;
+ assign w38 = w29;
+ assign w38 = w30;
+ assign w38 = w31;
+ assign w38 = w32;
+ assign w38 = w33;
+ assign w38 = w34;
+ assign w38 = w35;
+ assign w38 = w36;
+ assign w38 = w37;
+ assign w39 = w29;
+ assign w39 = w30;
+ assign w39 = w31;
+ assign w39 = w32;
+ assign w39 = w33;
+ assign w39 = w34;
+ assign w39 = w35;
+ assign w39 = w36;
+ assign w39 = w37;
+ assign w39 = w38;
  v05e8eb v45c5c8 (
   .v23dc54(w4),
   .va136b0(w5),
-  .vba32a6(w19),
-  .v157610(w20),
-  .vcc2c4f(w22),
-  .v922e3d(w28)
+  .vba32a6(w17),
+  .v157610(w18),
+  .vcc2c4f(w20),
+  .v922e3d(w29)
  );
  v05e8eb #(
   .v5a4ee6(p6)
@@ -76,9 +137,9 @@ module main #(
   .v23dc54(w0),
   .va136b0(w1),
   .vcc2c4f(w2),
-  .v157610(w12),
-  .vba32a6(w18),
-  .v922e3d(w30)
+  .v157610(w10),
+  .vba32a6(w16),
+  .v922e3d(w31)
  );
  v21cfcc v2579ea (
   .v9fb85f(w0)
@@ -91,7 +152,7 @@ module main #(
  );
  v7404e6 v0ef5e7 (
   .vd7d1f4(w3),
-  .v595263(w21)
+  .v595263(w19)
  );
  vfc9dac v3c0180 (
   .v8b19dd(w3),
@@ -99,46 +160,57 @@ module main #(
   .v64d863(w5)
  );
  vcfd9ba vbc7573 (
-  .vd4e5d7(w7),
-  .v6a82dd(w8),
-  .v444878(w25)
- );
- v1b3913 v33f77a (
-  .ve78ab8(w7),
-  .v3487af(w11),
-  .ved8395(w26)
+  .v6a82dd(w7),
+  .vd4e5d7(w22),
+  .v444878(w27)
  );
  v6f058b v0591fa (
-  .v2ebc76(w13),
-  .v4a41db(w23)
+  .v2ebc76(w11),
+  .vd65308(w23),
+  .v0d81e4(w24),
+  .v4a41db(w25)
  );
  v5cc6ec v4a3762 (
-  .v50d6c6(w9),
-  .v381ebf(w11),
-  .vb186da(w24),
-  .vc93bbe(w28)
+  .v50d6c6(w8),
+  .vb186da(w21),
+  .v381ebf(w22),
+  .vc93bbe(w29)
  );
  v0e64bc #(
-  .v207e0d(p10)
+  .v207e0d(p9)
  ) v8e1000 (
-  .v531e20(w27)
+  .v531e20(w28)
  );
  vf9ed0d vdd4e2b (
-  .v84ec18(w12),
-  .v961ee9(w13),
-  .vd115bb(w15),
-  .vbfdb97(w16),
-  .vc2ef4f(w17),
-  .v78b22f(w29)
+  .v84ec18(w10),
+  .v961ee9(w11),
+  .vd115bb(w13),
+  .vbfdb97(w14),
+  .vc2ef4f(w15),
+  .v78b22f(w26)
  );
  ve0c76e vaaffe8 (
-  .v234fbd(w14),
-  .v1bfd13(w15),
-  .ve6d7e4(w16),
-  .vfd9d0f(w17),
-  .vfc5572(w18),
-  .v21ec4d(w19),
-  .v7c37d9(w20)
+  .v234fbd(w12),
+  .v1bfd13(w13),
+  .ve6d7e4(w14),
+  .vfd9d0f(w15),
+  .vfc5572(w16),
+  .v21ec4d(w17),
+  .v7c37d9(w18)
+ );
+ v7263b9 vdedaf5 (
+  .ve5ee9d(w32),
+  .v21d803(w33),
+  .v1b2099(w34),
+  .v15c355(w35),
+  .vf0dd0a(w36),
+  .v737e15(w37),
+  .v858373(w38),
+  .v7fcaae(w39)
+ );
+ v35f267 v350c6e (
+  .vcbab45(w26),
+  .v0e28cb(w30)
  );
 endmodule
 
@@ -468,160 +540,6 @@ module vcfd9ba_va7041c (
  
  assign out = btn_out_r;
  
-endmodule
-//---- Top entity
-module v1b3913 (
- input ved8395,
- input ve78ab8,
- output v3487af
-);
- wire w0;
- wire w1;
- wire w2;
- wire w3;
- wire w4;
- wire w5;
- assign w0 = ve78ab8;
- assign w1 = ved8395;
- assign w4 = ve78ab8;
- assign v3487af = w5;
- assign w4 = w0;
- v1c7dae vbf8366 (
-  .vf54559(w0),
-  .va4102a(w1),
-  .ve8318d(w2)
- );
- v35f267 v5053a8 (
-  .v0e28cb(w2),
-  .vcbab45(w3)
- );
- vb2090f v758f4d (
-  .v0e28cb(w3),
-  .v3ca442(w4),
-  .vcbab45(w5)
- );
-endmodule
-
-/*-------------------------------------------------*/
-/*-- Subida  */
-/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
-/*-- Detector de flanco de subida. Emite un tic cuando detecta un flanco de subida. Versión bloques
-/*-------------------------------------------------*/
-//---- Top entity
-module v1c7dae #(
- parameter v71e305 = 0
-) (
- input va4102a,
- input vf54559,
- output ve8318d
-);
- localparam p2 = v71e305;
- wire w0;
- wire w1;
- wire w3;
- assign w0 = va4102a;
- assign ve8318d = w1;
- assign w3 = vf54559;
- v1c7dae_vb8adf8 #(
-  .INI(p2)
- ) vb8adf8 (
-  .clk(w0),
-  .q(w1),
-  .d(w3)
- );
-endmodule
-
-/*-------------------------------------------------*/
-/*-- Biestable-D  */
-/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
-/*-- Biestable de datos (Tipo D). Cuando se recibe un tic por load se captura el dato
-/*-------------------------------------------------*/
-
-module v1c7dae_vb8adf8 #(
- parameter INI = 0
-) (
- input clk,
- input d,
- output q
-);
- reg q = INI;
- always @(posedge clk)
-   q <= d;
-endmodule
-//---- Top entity
-module v35f267 (
- input v0e28cb,
- output vcbab45
-);
- wire w0;
- wire w1;
- assign w0 = v0e28cb;
- assign vcbab45 = w1;
- v35f267_vd54ca1 vd54ca1 (
-  .a(w0),
-  .c(w1)
- );
-endmodule
-
-/*-------------------------------------------------*/
-/*-- NOT  */
-/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
-/*-- Puerta NOT
-/*-------------------------------------------------*/
-
-module v35f267_vd54ca1 (
- input a,
- output c
-);
- //-- Puerta NOT
- 
- //-- module (input wire a, output wire c);
- 
- 
- assign c = ~a;
- 
- 
- //-- endmodule
- 
-endmodule
-//---- Top entity
-module vb2090f (
- input v0e28cb,
- input v3ca442,
- output vcbab45
-);
- wire w0;
- wire w1;
- wire w2;
- assign w0 = v0e28cb;
- assign w1 = v3ca442;
- assign vcbab45 = w2;
- vb2090f_vf4938a vf4938a (
-  .a(w0),
-  .b(w1),
-  .c(w2)
- );
-endmodule
-
-/*-------------------------------------------------*/
-/*-- AND  */
-/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
-/*-- Puerta AND
-/*-------------------------------------------------*/
-
-module vb2090f_vf4938a (
- input a,
- input b,
- output c
-);
- //-- Puerta AND
- 
- //-- module and (input wire a, input wire b,
- //--             output wire c);
- 
- assign c = a & b;
- 
- //-- endmodule
 endmodule
 //---- Top entity
 module v6f058b (
@@ -3110,4 +3028,40 @@ module v816138_vf4938a (
  assign c = a | b;
  
  //-- endmodule
+endmodule
+//---- Top entity
+module v35f267 (
+ input v0e28cb,
+ output vcbab45
+);
+ wire w0;
+ wire w1;
+ assign w0 = v0e28cb;
+ assign vcbab45 = w1;
+ v35f267_vd54ca1 vd54ca1 (
+  .a(w0),
+  .c(w1)
+ );
+endmodule
+
+/*-------------------------------------------------*/
+/*-- NOT  */
+/*-- - - - - - - - - - - - - - - - - - - - - - - --*/
+/*-- Puerta NOT
+/*-------------------------------------------------*/
+
+module v35f267_vd54ca1 (
+ input a,
+ output c
+);
+ //-- Puerta NOT
+ 
+ //-- module (input wire a, output wire c);
+ 
+ 
+ assign c = ~a;
+ 
+ 
+ //-- endmodule
+ 
 endmodule
