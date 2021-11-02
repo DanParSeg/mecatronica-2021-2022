@@ -68,5 +68,10 @@ for line in program:
         instr.append("0")
     print(str(opCodes[instr[0]])+argCodes(instr[1]),end=" ")
     i+=1
+
+for empty_instr in range(256-i):
+    print("ff",end=" ")
 print()
 print(tags)
+
+
