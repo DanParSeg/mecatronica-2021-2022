@@ -36,10 +36,10 @@ module main #(
  wire [0:7] w19;
  wire [0:7] w20;
  wire [0:31] w21;
- wire w22;
+ wire [0:7] w22;
  wire [0:7] w23;
  wire [0:7] w24;
- wire [0:7] w25;
+ wire w25;
  wire w26;
  wire w27;
  wire w28;
@@ -55,17 +55,14 @@ module main #(
  wire w38;
  assign w7 = v4a48f8;
  assign w8 = vb61f9c;
- assign w22 = vd71040;
- assign v862b7e = w23;
- assign v29e050 = w24;
- assign v6a9212 = w25;
+ assign v862b7e = w22;
+ assign v29e050 = w23;
+ assign v6a9212 = w24;
  assign w26 = vd71040;
  assign w27 = vd71040;
  assign w19 = w14;
  assign w20 = w13;
  assign w21 = w16;
- assign w26 = w22;
- assign w27 = w22;
  assign w27 = w26;
  assign w29 = w28;
  assign w30 = w28;
@@ -165,19 +162,20 @@ module main #(
  );
  v6f058b v0591fa (
   .v2ebc76(w21),
-  .vd65308(w23),
-  .v6b375c(w24),
-  .v0d81e4(w25)
+  .vd65308(w22),
+  .v6b375c(w23),
+  .v0d81e4(w24)
  );
  v5cc6ec v4a3762 (
   .v50d6c6(w8),
   .v381ebf(w15),
-  .vb186da(w22),
+  .vb186da(w25),
   .vc93bbe(w28)
  );
  v0e64bc #(
   .v207e0d(p9)
  ) v8e1000 (
+  .v8337bc(w25),
   .v531e20(w27)
  );
  ve0c76e vaaffe8 (

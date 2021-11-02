@@ -1,3 +1,5 @@
+define :hola 0f
+
 #valor 1 en r3
 zero R0
 addi 1
@@ -20,7 +22,7 @@ zero R2
     #ahora tengo libres r0 y r1 puedo hacer jump
     #direccion de memoria en r1
     zero R0
-    addi 4 :loop
+    addi :loop
     copy R0R1
     #salto incondicional
     jump 8
