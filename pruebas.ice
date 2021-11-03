@@ -12,26 +12,6 @@
     "graph": {
       "blocks": [
         {
-          "id": "11452e41-c5d8-4a51-88f1-61d7b67910e2",
-          "type": "basic.input",
-          "data": {
-            "name": "PushButton",
-            "pins": [
-              {
-                "index": "0",
-                "name": "CLK",
-                "value": "49"
-              }
-            ],
-            "virtual": false,
-            "clock": false
-          },
-          "position": {
-            "x": 1752,
-            "y": -352
-          }
-        },
-        {
           "id": "46ec8299-7132-4bb2-a3e3-8ce423c0cad3",
           "type": "basic.inputLabel",
           "data": {
@@ -47,8 +27,28 @@
             "virtual": true
           },
           "position": {
-            "x": 1960,
-            "y": -352
+            "x": 1952,
+            "y": -448
+          }
+        },
+        {
+          "id": "11452e41-c5d8-4a51-88f1-61d7b67910e2",
+          "type": "basic.input",
+          "data": {
+            "name": "PushButton",
+            "pins": [
+              {
+                "index": "0",
+                "name": "CLK",
+                "value": "49"
+              }
+            ],
+            "virtual": false,
+            "clock": false
+          },
+          "position": {
+            "x": 1696,
+            "y": -16
           }
         },
         {
@@ -339,12 +339,12 @@
           "type": "basic.constant",
           "data": {
             "name": "Hz",
-            "value": "100",
+            "value": "10",
             "local": false
           },
           "position": {
             "x": 1664,
-            "y": -240
+            "y": -448
           }
         },
         {
@@ -469,8 +469,8 @@
           "id": "8c70a9e0-5c16-44bf-9eaa-ba3ee0cfdb13",
           "type": "cfd9babc26edba88e2152493023c4bef7c47f247",
           "position": {
-            "x": 1688,
-            "y": -144
+            "x": 1712,
+            "y": -352
           },
           "size": {
             "width": 96,
@@ -494,7 +494,7 @@
           "type": "5cc6ec961df1a19b78d61422b28169fc0f69384b",
           "position": {
             "x": 1944,
-            "y": -176
+            "y": -384
           },
           "size": {
             "width": 96,
@@ -506,7 +506,7 @@
           "type": "0e64bc728cbb881007bf629e44dc5b5b0fa3a34c",
           "position": {
             "x": 1808,
-            "y": -240
+            "y": -448
           },
           "size": {
             "width": 96,
@@ -886,16 +886,6 @@
         },
         {
           "source": {
-            "block": "11452e41-c5d8-4a51-88f1-61d7b67910e2",
-            "port": "out"
-          },
-          "target": {
-            "block": "46ec8299-7132-4bb2-a3e3-8ce423c0cad3",
-            "port": "inlabel"
-          }
-        },
-        {
-          "source": {
             "block": "526b8364-37c4-4728-b6ac-1d93dcfe059b",
             "port": "99661aef-c9bf-473e-93c4-8f5edf511d36"
           },
@@ -935,6 +925,26 @@
             "port": "a122364d-1fdd-45ce-971f-c0ad6c8b1646"
           },
           "size": 8
+        },
+        {
+          "source": {
+            "block": "8c70a9e0-5c16-44bf-9eaa-ba3ee0cfdb13",
+            "port": "22ff3fa1-943b-4d1a-bd89-36e1c054d077"
+          },
+          "target": {
+            "block": "7b95bd1c-7bac-401d-bc84-071ea98ca394",
+            "port": "db089906-4326-4b59-8aa5-ebb61116a4cd"
+          }
+        },
+        {
+          "source": {
+            "block": "ee44057e-0e8f-4481-8b17-893619f5dbcb",
+            "port": "70887b0b-826c-4150-a873-605b77da8272"
+          },
+          "target": {
+            "block": "46ec8299-7132-4bb2-a3e3-8ce423c0cad3",
+            "port": "inlabel"
+          }
         }
       ]
     }

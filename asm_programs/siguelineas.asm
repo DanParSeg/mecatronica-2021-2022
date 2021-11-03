@@ -24,9 +24,6 @@ data :loop_addr :not_found :go_right :go_left :found
 
 
 
-
-#podria guardar todas las direcciones de los tags en ram para no depender de addi en mitad del programa
-
 :loop
     #cargo sensores en r0
     io 0
