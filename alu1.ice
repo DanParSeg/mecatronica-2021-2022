@@ -3993,7 +3993,7 @@
           "id": "4022da92-e75c-498f-9d35-8a5c8225f1ce",
           "type": "basic.outputLabel",
           "data": {
-            "name": "R1",
+            "name": "R0",
             "range": "[7:0]",
             "pins": [
               {
@@ -6656,6 +6656,16 @@
           "target": {
             "block": "b95ffd8b-8b53-4567-b989-41dbdac0f8d4",
             "port": "bba45940-204d-4df3-821d-1e22a0f97376"
+          }
+        },
+        {
+          "source": {
+            "block": "722991d3-3be4-42db-b3bb-2a65497341a7",
+            "port": "29c691ab-da29-4f47-8369-6686b63e1801"
+          },
+          "target": {
+            "block": "99990cae-16d8-40b6-8d12-c3bcf6a48901",
+            "port": "1e637a79-4a6d-495c-bcac-9664bdbe4b94"
           }
         }
       ]

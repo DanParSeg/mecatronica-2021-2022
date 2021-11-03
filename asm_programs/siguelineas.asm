@@ -1,9 +1,13 @@
 define :mask_sensors 3 #0011
 
-define :not_found_addr 0
-define :go_right_addr 1
-define :go_left_addr 2
-define :found_addr 3
+define :loop_addr 0
+define :not_found_addr 1
+define :go_right_addr 2
+define :go_left_addr 3
+define :found_addr 4
+
+
+data :loop_addr :not_found :go_right :go_left :found 
 
 #pseudocodigo:
 #while(true){
@@ -25,7 +29,9 @@ define :found_addr 3
 
 :loop
     #cargo sensores en r0
-
+    io 0
+    
+    #aplico mascara para quedarme con los 2 primeros bits
     copy r0r1
     zero r0
     addi :mask_sensors
@@ -96,28 +102,40 @@ define :found_addr 3
 :go_right
     zero r0
     addi 0001
+    #escribo el resultado en los motores
+    io 1
 
     #return
     zero r0
-    addi :loop
+    addi :loop_addr
+    copy r0r1
+    ld
     copy r0r1
     jump 8
 :go_left
     zero r0
     addi 0010
+    #escribo el resultado en los motores
+    io 1
 
     #return
     zero r0
-    addi :loop
+    addi :loop_addr
+    copy r0r1
+    ld
     copy r0r1
     jump 8
 :found
     zero r0
     addi 0011
+    #escribo el resultado en los motores
+    io 1
     
     #return
     zero r0
-    addi :loop
+    addi :loop_addr
+    copy r0r1
+    ld
     copy r0r1
     jump 8
 

@@ -51,6 +51,7 @@ import sys
 i=0#numero de instruccion para tag
 l=0#para el mensaje de debug
 constants={}
+data=[]#los datos de la memoria de datos
 
 program = open(sys.argv[1], "r")
 machine_code=""
@@ -63,10 +64,13 @@ for line in program:
     if(line[0]=="#"):#elimina comentarios
         continue
     if(line[0]==":"):#":" al principio de una linea para añadir un tag
-        constants[line]=i
+        constants[line]=hex(i)[2:]
         continue
     if(line.split()[0]=="define"):#define al principio de una linea para definir una constante
         constants[line.split()[1]]=line.split()[2]
+        continue
+    if(line.split()[0]=="data"):#para guardar datos en la memoria de datos
+        data=data+line.split()[1:]
         continue
 
     
@@ -77,9 +81,11 @@ for line in program:
     machine_code+=str(opCodes[instr[0]])+argCodes(instr[1])+" "
     i+=1
 
-emptychar="ff"
+emptychar=""
 for empty_instr in range(256-i):
-    machine_code+=emptychar+" "
+    machine_code+=emptychar
+
+data=" ".join(data)
 
 print("\n")
 print(machine_code)
@@ -88,11 +94,13 @@ print("sustituyendo constantes...")
 print(constants)
 print("\n")
 
+
 for c in constants:
     machine_code = machine_code.replace(c, str(constants[c]))
+    data=data.replace(c,str(constants[c]))
 
+print("text:")
 print(machine_code)
+print("\ndata:")
+print(data)
 print("\n")
-
-
-
