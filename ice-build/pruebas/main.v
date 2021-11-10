@@ -5,14 +5,14 @@
 //---- Top entity
 module main #(
  parameter v27a8d5 = "v27a8d5.list",
- parameter v169d65 = 10,
+ parameter v169d65 = 300000,
  parameter vd2e60e = "vd2e60e.list"
 ) (
  input vd71040,
  input v4a48f8,
  input vb61f9c,
- output [7:0] v29e050,
  output [7:0] v6a9212,
+ output [7:0] v29e050,
  output [7:0] v862b7e
 );
  localparam p6 = v27a8d5;
@@ -84,7 +84,7 @@ module main #(
   .vcc2c4f(w2),
   .vba32a6(w8),
   .v157610(w18),
-  .v922e3d(w33)
+  .v922e3d(w34)
  );
  v21cfcc v2579ea (
   .v9fb85f(w0)
@@ -123,7 +123,7 @@ module main #(
  );
  v96f098 v90bf86 (
   .vcbab45(w19),
-  .v0e28cb(w34)
+  .v0e28cb(w32)
  );
  v6f058b v344276 (
   .v2ebc76(w21),
@@ -145,7 +145,7 @@ module main #(
   .vc2ef4f(w17),
   .v84ec18(w18),
   .v19261f(w28),
-  .v78b22f(w32)
+  .v78b22f(w33)
  );
  v9f8856 v43ea85 (
   .v276bb9(w25),
