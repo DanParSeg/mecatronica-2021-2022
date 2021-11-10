@@ -7,7 +7,7 @@ define :go_left_addr 3
 define :found_addr 4
 
 
-data :loop_addr :not_found :go_right :go_left :found 
+data :loop :not_found :go_right :go_left :found 
 
 #pseudocodigo:
 #while(true){
