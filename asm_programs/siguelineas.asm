@@ -24,6 +24,7 @@ data :loop :not_found :go_right :go_left :found
 
 
 
+
 :loop
     #cargo sensores en r0
     io 0
