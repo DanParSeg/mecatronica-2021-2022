@@ -1351,6 +1351,22 @@
             "width": 96,
             "height": 64
           }
+        },
+        {
+          "id": "57edc502-bf13-4b66-a336-9cb91462324c",
+          "type": "basic.info",
+          "data": {
+            "info": "## Registro PC  \n\n    - apunta a la direccion de memoria de la siguiente instruccion\n    - la instruccion jump puede cambiar su valor\n    - si no hay jumps, se suma 1 a su valor actual en flanco de bajada",
+            "readonly": true
+          },
+          "position": {
+            "x": 1208,
+            "y": 1840
+          },
+          "size": {
+            "width": 536,
+            "height": 208
+          }
         }
       ],
       "wires": [

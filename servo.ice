@@ -1,7 +1,7 @@
 {
   "version": "1.2",
   "package": {
-    "name": "",
+    "name": "servo_pwm",
     "version": "",
     "description": "",
     "author": "",
@@ -82,23 +82,10 @@
           "data": {
             "name": "mod",
             "value": "240000",
-            "local": true
+            "local": false
           },
           "position": {
             "x": 1248,
-            "y": -248
-          }
-        },
-        {
-          "id": "fbfac733-a40c-439c-a7e1-8b071f6468cd",
-          "type": "basic.constant",
-          "data": {
-            "name": "fd",
-            "value": "30000",
-            "local": true
-          },
-          "position": {
-            "x": 1400,
             "y": -248
           }
         },
@@ -108,11 +95,11 @@
           "data": {
             "name": "bw",
             "value": "6000",
-            "local": true
+            "local": false
           },
           "position": {
-            "x": 1536,
-            "y": -248
+            "x": 1392,
+            "y": -344
           }
         },
         {
@@ -121,11 +108,24 @@
           "data": {
             "name": "stay",
             "value": "18000",
-            "local": true
+            "local": false
           },
           "position": {
-            "x": 1672,
-            "y": -256
+            "x": 1528,
+            "y": -344
+          }
+        },
+        {
+          "id": "fbfac733-a40c-439c-a7e1-8b071f6468cd",
+          "type": "basic.constant",
+          "data": {
+            "name": "fd",
+            "value": "30000",
+            "local": false
+          },
+          "position": {
+            "x": 1664,
+            "y": -344
           }
         },
         {
@@ -216,7 +216,7 @@
           "id": "e65d17e2-351c-4176-9cce-cf666f51f9a7",
           "type": "127665ad706ccc89ef04b8e579ae480c61e71bce",
           "position": {
-            "x": 1400,
+            "x": 1664,
             "y": -152
           },
           "size": {
@@ -252,7 +252,7 @@
           "id": "39e24161-ea00-43db-a65b-8670793fe5a9",
           "type": "127665ad706ccc89ef04b8e579ae480c61e71bce",
           "position": {
-            "x": 1536,
+            "x": 1392,
             "y": -152
           },
           "size": {
@@ -264,7 +264,7 @@
           "id": "495e1edb-a42d-4604-84af-ec55d0889f03",
           "type": "127665ad706ccc89ef04b8e579ae480c61e71bce",
           "position": {
-            "x": 1672,
+            "x": 1528,
             "y": -152
           },
           "size": {
@@ -306,6 +306,38 @@
           "size": {
             "width": 96,
             "height": 64
+          }
+        },
+        {
+          "id": "f71f74b5-5177-4bbd-83a9-81627766a973",
+          "type": "basic.info",
+          "data": {
+            "info": "## Generador de PWM\n\ncontador de 18 bits  \n2^18 = 262144  \n262144 > 240000  \n12MHz/240000=50Hz  \n\n```\nwhile(true)\n    c++;\n    if(c==240000)\n        reset();\n```",
+            "readonly": true
+          },
+          "position": {
+            "x": 712,
+            "y": 224
+          },
+          "size": {
+            "width": 200,
+            "height": 184
+          }
+        },
+        {
+          "id": "fa082220-645b-4310-96f8-9f773a186003",
+          "type": "basic.info",
+          "data": {
+            "info": "6000 tics  /12MHz= 0.5ms  \n18000 tics /12MHz= 1.5ms  \n30000 tics /12MHz= 2.5ms  ",
+            "readonly": true
+          },
+          "position": {
+            "x": 1440,
+            "y": -480
+          },
+          "size": {
+            "width": 216,
+            "height": 128
           }
         }
       ],
