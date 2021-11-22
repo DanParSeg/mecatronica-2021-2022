@@ -2,7 +2,7 @@
 <html>
   
 <head>
-  <meta http-equiv="refresh" content="0; url=http://example.com/" />
+  <meta http-equiv="refresh" content="0; url=https://danparseg.github.io/mecatronica-2021-2022/web/index.html" />
 </head>
   
 <body>
