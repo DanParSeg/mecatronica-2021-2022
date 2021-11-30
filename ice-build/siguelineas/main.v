@@ -10,14 +10,14 @@ module main #(
  parameter v96af80 = 17000,
  parameter v3b75fc = 19000
 ) (
+ input v6b7e53,
+ input v5961a8,
  input v269f01,
  input v6c71a3,
  input [1:0] v9b2b58,
- input v6b7e53,
- input v5961a8,
+ output v260b3d,
  output [7:0] v9a0d87,
- output [1:0] vd2dad5,
- output v260b3d
+ output [1:0] vd2dad5
 );
  localparam p0 = v0601c7;
  localparam p11 = v0d69e6;
@@ -59,10 +59,10 @@ module main #(
  wire [0:7] w37;
  wire [0:7] w38;
  wire [0:7] w39;
- wire [0:7] w40;
+ wire w40;
  wire w41;
- wire w42;
- wire [0:31] w43;
+ wire [0:31] w42;
+ wire [0:7] w43;
  wire w44;
  wire w45;
  wire w46;
@@ -78,7 +78,7 @@ module main #(
  assign w32 = v6b7e53;
  assign v260b3d = w33;
  assign v9a0d87 = w34;
- assign w42 = v5961a8;
+ assign w41 = v5961a8;
  assign w44 = v5961a8;
  assign w45 = v5961a8;
  assign w46 = v5961a8;
@@ -87,37 +87,36 @@ module main #(
  assign w49 = v5961a8;
  assign w50 = v5961a8;
  assign w51 = v5961a8;
- assign w39 = w14;
- assign w40 = w38;
- assign w44 = w42;
- assign w45 = w42;
+ assign w39 = w38;
+ assign w44 = w41;
+ assign w45 = w41;
  assign w45 = w44;
- assign w46 = w42;
+ assign w46 = w41;
  assign w46 = w44;
  assign w46 = w45;
- assign w47 = w42;
+ assign w47 = w41;
  assign w47 = w44;
  assign w47 = w45;
  assign w47 = w46;
- assign w48 = w42;
+ assign w48 = w41;
  assign w48 = w44;
  assign w48 = w45;
  assign w48 = w46;
  assign w48 = w47;
- assign w49 = w42;
+ assign w49 = w41;
  assign w49 = w44;
  assign w49 = w45;
  assign w49 = w46;
  assign w49 = w47;
  assign w49 = w48;
- assign w50 = w42;
+ assign w50 = w41;
  assign w50 = w44;
  assign w50 = w45;
  assign w50 = w46;
  assign w50 = w47;
  assign w50 = w48;
  assign w50 = w49;
- assign w51 = w42;
+ assign w51 = w41;
  assign w51 = w44;
  assign w51 = w45;
  assign w51 = w46;
@@ -142,8 +141,8 @@ module main #(
   .vc13c07(w3),
   .v9b870f(w4),
   .v381ebf(w6),
-  .vc93bbe(w41),
-  .vd7f8af(w42)
+  .vc93bbe(w40),
+  .vd7f8af(w41)
  );
  vfc9dac v7fd77a (
   .v3f8943(w3),
@@ -173,13 +172,14 @@ module main #(
   .v0d81e4(w27),
   .v6b375c(w28),
   .vd65308(w29),
-  .v2ebc76(w43)
+  .v2ebc76(w42)
  );
  v6f058b v61bcb6 (
   .v4a41db(w30),
   .v0d81e4(w31),
   .v2ebc76(w35),
-  .vd65308(w36)
+  .vd65308(w36),
+  .v6b375c(w43)
  );
  v9f8856 v2d5778 (
   .v276bb9(w13),
@@ -209,7 +209,7 @@ module main #(
  v7107c6 v1bce63 (
   .v2b13a4(w15),
   .v2c4c48(w16),
-  .v595263(w40)
+  .v595263(w39)
  );
  v67b82c #(
   .vd2e60e(p11),
@@ -219,8 +219,8 @@ module main #(
   .v8ff487(w35),
   .v72dc50(w37),
   .v575022(w38),
-  .v919ee7(w41),
-  .v92d32d(w43)
+  .v919ee7(w40),
+  .v92d32d(w42)
  );
  v28f89a #(
   .v421b6f(p24)
@@ -249,7 +249,7 @@ module main #(
   .v505830(w36),
   .v4d9712(w37),
   .vb239bb(w38),
-  .v034e1f(w39),
+  .v034e1f(w43),
   .v0874a9(w51)
  );
 endmodule
