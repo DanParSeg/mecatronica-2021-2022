@@ -1,0 +1,71 @@
+Overall specs:
+12MHz clock
+1 stage instructions: (fetch, decode, execute, write in a single clock pulse)
+8 bit instructions: 4bit opcode 4bit args
+15 unique instructions
+
+Registers:
+4 general purpose registers (r0, r1, r2, r3)
+r1 can be a pointer
+r1, r2 are usually args of the operations
+r0 is usually the result
+
+ALU and control:
+
+0  add    args:         reads: r1,r2     writes: r0
+    r0=r1+r2
+1  sub    args:         reads: r1,r2     writes: r0
+    r0=r1-r2
+2  addi   args: lit     reads: r0        writes: r0
+    r0=r0+lit (4 bits)
+3  zero   args: rn      reads:           writes: rn
+    rn=0
+4  and    args:         reads: r1,r2     writes: r0
+    r0=r1&&r2
+5  nand   args:         reads: r1,r2     writes: r0
+    r0=!(r1&&r2)
+6  left   args:         reads: r0        writes: r0
+    r0<<1
+7  right  args:         reads: r0        writes: r0
+    r0>>1
+8  copy   args: rn,rm   reads: rn        writes: rm
+    rm=rn
+9  io     args:         reads: r0        writes: r0
+    
+10 cmp    args:         reads: r1,r2     writes: flags
+    flags=result
+11 jump   args: flag    reads: r1        writes: pc
+    
+12 ld     args:         reads: r1,data   writes: r0
+    r0=data (en &r1)
+13 st     args:         reads: r1,r2     writes: r0,data
+    data=r2 (en &r1)
+14 frst   args:         reads:           writes: flags
+    flags=0
+15 not used
+
+
+Flags:
+TODO: poner flags
+
+IO ports:
+1 byte input 1 byte output
+ports can be accessed using a special instruction
+
+Program counter:
+TODO: explicar
+
+RAM:
+256 bytes data, 256 bytes program
+
+Possible upgrades:
+cache, stack, load ram from external drive, upgrade immediate load, instruction set
+
+external assembler:
+generates hex data that can be pasted directly into program and data memories
+
+programs:
+9-7
+bubblesort
+fibonacci
+siguelineas
